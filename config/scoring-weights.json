@@ -1,0 +1,57 @@
+{
+  "engagementWeights": {
+    "comments": 0.5,
+    "upvotes": 0.3,
+    "recency": 0.2
+  },
+  "qualityFactors": {
+    "contentLength": 0.1,
+    "authorReputation": 0.1,
+    "responseRate": 0.05,
+    "titleQuality": 0.05
+  },
+  "categoryMultipliers": {
+    "starting-up": 1.0,
+    "tech": 0.9,
+    "ai": 1.1,
+    "creators": 0.8,
+    "money": 1.0,
+    "main-feed": 0.7
+  },
+  "recencyDecay": {
+    "halfLife": 12,
+    "maxAge": 48,
+    "decayRate": 0.05
+  },
+  "engagementThresholds": {
+    "viral": 100,
+    "popular": 50,
+    "trending": 20,
+    "active": 5,
+    "minimal": 1
+  },
+  "contentAnalysis": {
+    "keywordBoosts": {
+      "launch": 1.2,
+      "milestone": 1.1,
+      "revenue": 1.3,
+      "funding": 1.2,
+      "growth": 1.1,
+      "failure": 1.1,
+      "success": 1.1,
+      "startup": 1.0,
+      "indie": 1.0
+    },
+    "sentimentMultipliers": {
+      "positive": 1.1,
+      "neutral": 1.0,
+      "negative": 0.9
+    }
+  },
+  "authorFactors": {
+    "verifiedMultiplier": 1.2,
+    "followersThreshold": 1000,
+    "reputationWeight": 0.1,
+    "activityBonus": 1.05
+  }
+}

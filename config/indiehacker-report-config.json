@@ -1,0 +1,109 @@
+{
+  "reportConfig": {
+    "title": "IndieHackers Daily Analytics Report",
+    "description": "Automated analysis of IndieHackers community content and engagement",
+    "version": "1.0.0",
+    "author": "IndieHackers Analytics Scraper"
+  },
+  "outputFormats": {
+    "markdown": {
+      "enabled": true,
+      "filename": "report.md",
+      "includeTableOfContents": true,
+      "includeMetadata": true
+    },
+    "json": {
+      "enabled": true,
+      "filename": "processed-data.json",
+      "pretty": true,
+      "includeRawData": false
+    },
+    "csv": {
+      "enabled": false,
+      "filename": "posts-data.csv",
+      "includeHeaders": true
+    }
+  },
+  "sections": {
+    "executiveSummary": {
+      "enabled": true,
+      "includeTopCategory": true,
+      "includeProcessingStats": true,
+      "includeTrendingSummary": true,
+      "maxTrendingTopics": 5
+    },
+    "topPosts": {
+      "enabled": true,
+      "maxPosts": 20,
+      "includeAuthorInfo": true,
+      "includeEngagementMetrics": true,
+      "includeSummary": true,
+      "includeDirectLinks": true
+    },
+    "categoryBreakdown": {
+      "enabled": true,
+      "includeStats": true,
+      "maxPostsPerCategory": 10,
+      "sortBy": "engagementScore"
+    },
+    "trendingTopics": {
+      "enabled": true,
+      "maxTopics": 10,
+      "includePostCount": true,
+      "includeDescription": true,
+      "minPostFrequency": 3
+    },
+    "authorAnalysis": {
+      "enabled": true,
+      "maxAuthors": 10,
+      "includeTopContributors": true,
+      "includeNewVoices": true
+    },
+    "engagementAnalysis": {
+      "enabled": true,
+      "includeAverages": true,
+      "includeDistribution": true,
+      "includeComparisons": true
+    },
+    "metadata": {
+      "enabled": true,
+      "includeProcessingTime": true,
+      "includeDataQuality": true,
+      "includeErrors": true,
+      "includeVersion": true
+    }
+  },
+  "formatting": {
+    "dateFormat": "MMMM DD, YYYY",
+    "timeFormat": "HH:mm:ss",
+    "numberFormat": {
+      "thousands": ",",
+      "decimals": 0
+    },
+    "markdown": {
+      "headerLevel": 2,
+      "useEmojis": true,
+      "includeHorizontalRules": true,
+      "linkStyle": "inline"
+    }
+  },
+  "thresholds": {
+    "minPostsForTrending": 5,
+    "minEngagementForTop": 10,
+    "maxSummaryLength": 200,
+    "maxTitleLength": 100
+  },
+  "filters": {
+    "excludeDeletedPosts": true,
+    "excludeLowQuality": true,
+    "minContentLength": 10,
+    "maxAge": "48h"
+  },
+  "analytics": {
+    "calculateTrends": true,
+    "detectDuplicates": true,
+    "performSentiment": false,
+    "extractKeywords": true,
+    "analyzeEngagement": true
+  }
+}

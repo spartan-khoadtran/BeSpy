@@ -1,0 +1,97 @@
+{
+  "name": "indiehackers-scraper-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive test suite for IndieHackers scraper functionality",
+  "main": "run-tests.js",
+  "scripts": {
+    "test": "node run-tests.js",
+    "test:unit": "node run-tests.js unit",
+    "test:integration": "node run-tests.js integration",
+    "test:performance": "node run-tests.js performance",
+    "test:coverage": "node run-tests.js full-coverage",
+    "test:watch": "node run-tests.js watch",
+    "test:ci": "node run-tests.js ci",
+    "test:quick": "node run-tests.js quick",
+    "test:pattern": "node run-tests.js --pattern",
+    "test:verbose": "node run-tests.js --verbose",
+    "test:bail": "node run-tests.js --bail",
+    "test:help": "node run-tests.js --help",
+    "clean": "rimraf coverage reports",
+    "validate": "node -c run-tests.js && echo 'Test runner syntax valid'",
+    "debug": "node --inspect-brk run-tests.js"
+  },
+  "keywords": [
+    "indiehackers",
+    "scraper",
+    "testing",
+    "jest",
+    "qa",
+    "validation",
+    "automation"
+  ],
+  "author": "QA Validator Agent",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporters": "^3.1.5",
+    "jest-junit": "^16.0.0",
+    "babel-jest": "^29.7.0",
+    "@babel/preset-env": "^7.22.0",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/example/bespy-playwright.git"
+  },
+  "bugs": {
+    "url": "https://github.com/example/bespy-playwright/issues"
+  },
+  "homepage": "https://github.com/example/bespy-playwright#readme",
+  "jest": {
+    "preset": "./jest.config.js"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "16"
+          }
+        }
+      ]
+    ]
+  },
+  "testEnvironment": "node",
+  "collectCoverageFrom": [
+    "../../scripts/indiehackers/**/*.{js,mjs}",
+    "mocks/**/*.js",
+    "utils/**/*.js",
+    "!**/*.test.js",
+    "!**/*.spec.js",
+    "!**/node_modules/**",
+    "!**/fixtures/**"
+  ],
+  "testMatch": [
+    "**/*.test.js",
+    "**/*.spec.js"
+  ],
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "/coverage/",
+    "/reports/"
+  ],
+  "coverageDirectory": "./coverage",
+  "coverageReporters": [
+    "text",
+    "html",
+    "json",
+    "lcov"
+  ]
+}

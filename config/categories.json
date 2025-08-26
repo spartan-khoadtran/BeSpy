@@ -1,0 +1,201 @@
+{
+  "categories": {
+    "starting-up": {
+      "name": "Starting Up",
+      "url": "https://www.indiehackers.com/starting-up",
+      "enabled": true,
+      "maxPosts": 50,
+      "priority": 1,
+      "description": "Startup-focused content and discussions",
+      "selectors": {
+        "postContainer": "[data-test='post-item'], .post-item, .discussion-item",
+        "title": ".post-title a, .discussion-title a, h3 a, .title a",
+        "author": ".post-author-name, .author-name, .username",
+        "authorUrl": ".post-author-name, .author-name, .username",
+        "upvotes": ".vote-count, .upvote-count, .likes-count",
+        "comments": ".comment-count, .comments-count, .replies-count",
+        "timestamp": ".post-time, .timestamp, .created-at, time",
+        "content": ".post-content, .post-preview, .discussion-preview",
+        "postUrl": ".post-title a, .discussion-title a, h3 a, .title a",
+        "category": ".category-tag, .tag, .post-category"
+      },
+      "filters": {
+        "timeRange": "24h",
+        "minEngagement": 0,
+        "contentTypes": ["discussion", "post", "question"]
+      },
+      "rateLimit": {
+        "requestsPerMinute": 30,
+        "delayBetweenPages": 2000
+      }
+    },
+    "tech": {
+      "name": "Tech",
+      "url": "https://www.indiehackers.com/tech",
+      "enabled": true,
+      "maxPosts": 50,
+      "priority": 2,
+      "description": "Technical discussions and development topics",
+      "selectors": {
+        "postContainer": "[data-test='post-item'], .post-item, .discussion-item",
+        "title": ".post-title a, .discussion-title a, h3 a, .title a",
+        "author": ".post-author-name, .author-name, .username",
+        "authorUrl": ".post-author-name, .author-name, .username",
+        "upvotes": ".vote-count, .upvote-count, .likes-count",
+        "comments": ".comment-count, .comments-count, .replies-count",
+        "timestamp": ".post-time, .timestamp, .created-at, time",
+        "content": ".post-content, .post-preview, .discussion-preview",
+        "postUrl": ".post-title a, .discussion-title a, h3 a, .title a",
+        "category": ".category-tag, .tag, .post-category"
+      },
+      "filters": {
+        "timeRange": "24h",
+        "minEngagement": 0,
+        "contentTypes": ["discussion", "post", "question"]
+      },
+      "rateLimit": {
+        "requestsPerMinute": 30,
+        "delayBetweenPages": 2000
+      }
+    },
+    "ai": {
+      "name": "Artificial Intelligence",
+      "url": "https://www.indiehackers.com/tags/artificial-intelligence",
+      "enabled": true,
+      "maxPosts": 50,
+      "priority": 1,
+      "description": "AI-related posts and discussions",
+      "selectors": {
+        "postContainer": "[data-test='post-item'], .post-item, .discussion-item",
+        "title": ".post-title a, .discussion-title a, h3 a, .title a",
+        "author": ".post-author-name, .author-name, .username",
+        "authorUrl": ".post-author-name, .author-name, .username",
+        "upvotes": ".vote-count, .upvote-count, .likes-count",
+        "comments": ".comment-count, .comments-count, .replies-count",
+        "timestamp": ".post-time, .timestamp, .created-at, time",
+        "content": ".post-content, .post-preview, .discussion-preview",
+        "postUrl": ".post-title a, .discussion-title a, h3 a, .title a",
+        "category": ".category-tag, .tag, .post-category"
+      },
+      "filters": {
+        "timeRange": "24h",
+        "minEngagement": 0,
+        "contentTypes": ["discussion", "post", "question"]
+      },
+      "rateLimit": {
+        "requestsPerMinute": 30,
+        "delayBetweenPages": 2000
+      }
+    },
+    "creators": {
+      "name": "Creators",
+      "url": "https://www.indiehackers.com/creators",
+      "enabled": true,
+      "maxPosts": 50,
+      "priority": 3,
+      "description": "Creator economy and content creation discussions",
+      "selectors": {
+        "postContainer": "[data-test='post-item'], .post-item, .discussion-item",
+        "title": ".post-title a, .discussion-title a, h3 a, .title a",
+        "author": ".post-author-name, .author-name, .username",
+        "authorUrl": ".post-author-name, .author-name, .username",
+        "upvotes": ".vote-count, .upvote-count, .likes-count",
+        "comments": ".comment-count, .comments-count, .replies-count",
+        "timestamp": ".post-time, .timestamp, .created-at, time",
+        "content": ".post-content, .post-preview, .discussion-preview",
+        "postUrl": ".post-title a, .discussion-title a, h3 a, .title a",
+        "category": ".category-tag, .tag, .post-category"
+      },
+      "filters": {
+        "timeRange": "24h",
+        "minEngagement": 0,
+        "contentTypes": ["discussion", "post", "question"]
+      },
+      "rateLimit": {
+        "requestsPerMinute": 30,
+        "delayBetweenPages": 2000
+      }
+    },
+    "money": {
+      "name": "Money",
+      "url": "https://www.indiehackers.com/money",
+      "enabled": true,
+      "maxPosts": 50,
+      "priority": 1,
+      "description": "Financial and revenue-related discussions",
+      "selectors": {
+        "postContainer": "[data-test='post-item'], .post-item, .discussion-item",
+        "title": ".post-title a, .discussion-title a, h3 a, .title a",
+        "author": ".post-author-name, .author-name, .username",
+        "authorUrl": ".post-author-name, .author-name, .username",
+        "upvotes": ".vote-count, .upvote-count, .likes-count",
+        "comments": ".comment-count, .comments-count, .replies-count",
+        "timestamp": ".post-time, .timestamp, .created-at, time",
+        "content": ".post-content, .post-preview, .discussion-preview",
+        "postUrl": ".post-title a, .discussion-title a, h3 a, .title a",
+        "category": ".category-tag, .tag, .post-category"
+      },
+      "filters": {
+        "timeRange": "24h",
+        "minEngagement": 0,
+        "contentTypes": ["discussion", "post", "question"]
+      },
+      "rateLimit": {
+        "requestsPerMinute": 30,
+        "delayBetweenPages": 2000
+      }
+    },
+    "main-feed": {
+      "name": "IndieHackers Main Feed",
+      "url": "https://www.indiehackers.com/",
+      "enabled": true,
+      "maxPosts": 50,
+      "priority": 4,
+      "description": "Main feed with trending and popular posts",
+      "selectors": {
+        "postContainer": "[data-test='post-item'], .post-item, .discussion-item",
+        "title": ".post-title a, .discussion-title a, h3 a, .title a",
+        "author": ".post-author-name, .author-name, .username",
+        "authorUrl": ".post-author-name, .author-name, .username",
+        "upvotes": ".vote-count, .upvote-count, .likes-count",
+        "comments": ".comment-count, .comments-count, .replies-count",
+        "timestamp": ".post-time, .timestamp, .created-at, time",
+        "content": ".post-content, .post-preview, .discussion-preview",
+        "postUrl": ".post-title a, .discussion-title a, h3 a, .title a",
+        "category": ".category-tag, .tag, .post-category"
+      },
+      "filters": {
+        "timeRange": "24h",
+        "minEngagement": 0,
+        "contentTypes": ["discussion", "post", "question"]
+      },
+      "rateLimit": {
+        "requestsPerMinute": 30,
+        "delayBetweenPages": 2000
+      }
+    }
+  },
+  "globalSettings": {
+    "browser": {
+      "headless": true,
+      "timeout": 30000,
+      "viewport": {
+        "width": 1400,
+        "height": 900
+      },
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    },
+    "scraping": {
+      "maxConcurrency": 3,
+      "globalTimeout": 300000,
+      "retryAttempts": 3,
+      "retryDelay": 5000
+    },
+    "processing": {
+      "duplicateThreshold": 0.85,
+      "contentMinLength": 10,
+      "summaryMaxLength": 200,
+      "trendsMinFrequency": 3
+    }
+  }
+}

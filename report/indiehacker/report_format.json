@@ -1,0 +1,195 @@
+{
+    "metadata": {
+      "report_date": "2025-08-26",
+      "generated_at": "2025-08-26T16:00:24Z",
+      "scraper_version": "1.0",
+      "total_posts_analyzed": 4,
+      "categories_covered": 1,
+      "top_engagement_category": "IndieHackers",
+      "average_engagement_per_post": 5.5,
+      "total_community_engagement": 22
+    },
+    "posts": [
+      {
+        "post_id": "7f5d17d69a",
+        "title": "Textideo Veo3 vs. OpenAI Sora: 2025 Side-by-Side Comparison",
+        "url": "https://www.indiehackers.com/post/textideo-veo3-vs-openai-sora-2025-side-by-side-comparison-7f5d17d69a",
+        "author": {
+          "username": "jacqueline888",
+          "display_name": "Jacqueline",
+          "verified": false
+        },
+        "category": "IndieHackers",
+        "content": {
+          "summary": "Featured Anuja Dhawan built an early AI product and grew it to a 6-figure ARR. And she just launched the first-ever AI model built natively for dubbin...",
+          "full_text": ""
+        },
+        "metrics": {
+          "comments": 5,
+          "upvotes": 1,
+          "engagement_score": 3.3
+        },
+        "timestamps": {
+          "posted_at": null,
+          "scraped_at": "2025-08-26T16:00:24Z"
+        },
+        "ranking": 1
+      },
+      {
+        "post_id": "aR2BxPbN7LeKJf8GoxFZ",
+        "title": "✨ New Feature: \"Me Surpreenda!\" in Roteirito",
+        "url": "https://www.indiehackers.com/product/roteirito?post=aR2BxPbN7LeKJf8GoxFZ",
+        "author": {
+          "username": "unknown",
+          "display_name": "Unknown",
+          "verified": false
+        },
+        "category": "IndieHackers",
+        "content": {
+          "summary": "A daily leaderboard of build-in-public posts.",
+          "full_text": ""
+        },
+        "metrics": {
+          "comments": 5,
+          "upvotes": 1,
+          "engagement_score": 3.3
+        },
+        "timestamps": {
+          "posted_at": null,
+          "scraped_at": "2025-08-26T16:00:24Z"
+        },
+        "ranking": 2
+      },
+      {
+        "post_id": "WTTAFIF7cTBmukDDEgVp",
+        "title": "Dear Future You: Low Tech in the Age of AI",
+        "url": "https://www.indiehackers.com/product/dear-future-you?post=WTTAFIF7cTBmukDDEgVp",
+        "author": {
+          "username": "unknown",
+          "display_name": "Unknown",
+          "verified": false
+        },
+        "category": "IndieHackers",
+        "content": {
+          "summary": "",
+          "full_text": ""
+        },
+        "metrics": {
+          "comments": 3,
+          "upvotes": 2,
+          "engagement_score": 2.4
+        },
+        "timestamps": {
+          "posted_at": null,
+          "scraped_at": "2025-08-26T16:00:24Z"
+        },
+        "ranking": 3
+      },
+      {
+        "post_id": "JWDn6lm2JdLFkY7rqacn",
+        "title": "6 Months Wasted on a Feature Nobody Wanted",
+        "url": "https://www.indiehackers.com/product/ultra-lean-mvps-by-vittorio?post=JWDn6lm2JdLFkY7rqacn",
+        "author": {
+          "username": "unknown",
+          "display_name": "Unknown",
+          "verified": false
+        },
+        "category": "IndieHackers",
+        "content": {
+          "summary": "",
+          "full_text": ""
+        },
+        "metrics": {
+          "comments": 2,
+          "upvotes": 3,
+          "engagement_score": 2.1
+        },
+        "timestamps": {
+          "posted_at": null,
+          "scraped_at": "2025-08-26T16:00:24Z"
+        },
+        "ranking": 4
+      }
+    ],
+    "categories": {
+      "IndieHackers": {
+        "post_count": 4,
+        "total_engagement": 22,
+        "average_engagement": 5.5,
+        "top_post": {
+          "title": "Textideo Veo3 vs. OpenAI Sora: 2025 Side-by-Side Comparison",
+          "engagement_score": 3.3
+        }
+      },
+      "starting_up": {
+        "post_count": 0,
+        "total_engagement": 0,
+        "average_engagement": 0,
+        "top_post": null
+      },
+      "tech": {
+        "post_count": 0,
+        "total_engagement": 0,
+        "average_engagement": 0,
+        "top_post": null
+      },
+      "ai": {
+        "post_count": 0,
+        "total_engagement": 0,
+        "average_engagement": 0,
+        "top_post": null
+      },
+      "creators": {
+        "post_count": 0,
+        "total_engagement": 0,
+        "average_engagement": 0,
+        "top_post": null
+      },
+      "money": {
+        "post_count": 0,
+        "total_engagement": 0,
+        "average_engagement": 0,
+        "top_post": null
+      }
+    },
+    "trending_themes": [
+      {
+        "keyword": "Featured",
+        "frequency": 3,
+        "related_posts": [
+          {
+            "post_id": "7f5d17d69a",
+            "title": "Textideo Veo3 vs. OpenAI Sora: 2025 Side-by-Side Comparison",
+            "url": "https://www.indiehackers.com/post/textideo-veo3-vs-openai-sora-2025-side-by-side-comparison-7f5d17d69a",
+            "comments": 5
+          }
+        ]
+      },
+      {
+        "keyword": "AI",
+        "frequency": 2,
+        "related_posts": [
+          {
+            "post_id": "7f5d17d69a",
+            "title": "Textideo Veo3 vs. OpenAI Sora: 2025 Side-by-Side Comparison",
+            "url": "https://www.indiehackers.com/post/textideo-veo3-vs-openai-sora-2025-side-by-side-comparison-7f5d17d69a",
+            "comments": 5
+          },
+          {
+            "post_id": "WTTAFIF7cTBmukDDEgVp",
+            "title": "Dear Future You: Low Tech in the Age of AI",
+            "url": "https://www.indiehackers.com/product/dear-future-you?post=WTTAFIF7cTBmukDDEgVp",
+            "comments": 3
+          }
+        ]
+      }
+    ],
+    "engagement_scoring": {
+      "algorithm": {
+        "comments_weight": 0.6,
+        "upvotes_weight": 0.3,
+        "recency_weight": 0.1
+      },
+      "description": "Posts ranked by engagement score calculated from weighted metrics"
+    }
+  }

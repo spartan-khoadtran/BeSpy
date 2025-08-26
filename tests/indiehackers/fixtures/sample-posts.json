@@ -1,0 +1,163 @@
+{
+  "sampleIndieHackersPosts": [
+    {
+      "id": "post-1",
+      "title": "How I Built a $50k MRR SaaS in 12 Months",
+      "url": "https://www.indiehackers.com/post/how-i-built-a-50k-mrr-saas-in-12-months",
+      "author": {
+        "username": "saasfounder",
+        "display_name": "Sarah Johnson",
+        "profile_url": "https://www.indiehackers.com/@saasfounder"
+      },
+      "category": "starting-up",
+      "engagement": {
+        "upvotes": 145,
+        "comments": 32,
+        "views": 2500
+      },
+      "timestamp": "2025-08-26T10:30:00Z",
+      "content_preview": "After years of corporate life, I decided to take the leap into entrepreneurship. Here's my journey building a project management tool that now generates $50k monthly recurring revenue...",
+      "tags": ["saas", "entrepreneurship", "growth"],
+      "engagement_score": 177
+    },
+    {
+      "id": "post-2", 
+      "title": "The AI Revolution: Tools Every Developer Should Know",
+      "url": "https://www.indiehackers.com/post/ai-revolution-tools-developers",
+      "author": {
+        "username": "techdev123",
+        "display_name": "Alex Chen",
+        "profile_url": "https://www.indiehackers.com/@techdev123"
+      },
+      "category": "tech",
+      "engagement": {
+        "upvotes": 89,
+        "comments": 24,
+        "views": 1800
+      },
+      "timestamp": "2025-08-26T14:15:00Z",
+      "content_preview": "AI is transforming how we code. These 10 tools have revolutionized my development workflow and increased my productivity by 300%...",
+      "tags": ["ai", "tools", "productivity"],
+      "engagement_score": 113
+    },
+    {
+      "id": "post-3",
+      "title": "Building an AI-Powered Content Generator: Lessons Learned",
+      "url": "https://www.indiehackers.com/post/ai-content-generator-lessons",
+      "author": {
+        "username": "aibuilder",
+        "display_name": "Maria Rodriguez",
+        "profile_url": "https://www.indiehackers.com/@aibuilder"
+      },
+      "category": "artificial-intelligence",
+      "engagement": {
+        "upvotes": 67,
+        "comments": 18,
+        "views": 1200
+      },
+      "timestamp": "2025-08-26T16:45:00Z",
+      "content_preview": "Three months ago, I launched an AI writing assistant. Here are the technical challenges I faced and how I overcame them...",
+      "tags": ["ai", "machine-learning", "startup"],
+      "engagement_score": 85
+    },
+    {
+      "id": "post-4",
+      "title": "Creator Economy: How I Made $10k from My First Course",
+      "url": "https://www.indiehackers.com/post/creator-economy-first-course",
+      "author": {
+        "username": "coursecreator",
+        "display_name": "James Wilson",
+        "profile_url": "https://www.indiehackers.com/@coursecreator"
+      },
+      "category": "creators",
+      "engagement": {
+        "upvotes": 123,
+        "comments": 28,
+        "views": 2100
+      },
+      "timestamp": "2025-08-26T09:20:00Z",
+      "content_preview": "Creating my first online course was terrifying. Here's how I went from zero to $10k in revenue in just 6 weeks...",
+      "tags": ["courses", "education", "revenue"],
+      "engagement_score": 151
+    },
+    {
+      "id": "post-5",
+      "title": "Revenue Optimization: 5 Strategies That Doubled My Income",
+      "url": "https://www.indiehackers.com/post/revenue-optimization-strategies",
+      "author": {
+        "username": "revenueoptimizer",
+        "display_name": "Tom Baker",
+        "profile_url": "https://www.indiehackers.com/@revenueoptimizer"
+      },
+      "category": "money",
+      "engagement": {
+        "upvotes": 98,
+        "comments": 35,
+        "views": 1950
+      },
+      "timestamp": "2025-08-26T11:10:00Z",
+      "content_preview": "Last year I was struggling to hit $5k MRR. These five strategic changes helped me reach $10k+ consistently...",
+      "tags": ["revenue", "optimization", "growth"],
+      "engagement_score": 133
+    }
+  ],
+  "categoryData": {
+    "starting-up": {
+      "name": "Starting Up",
+      "url": "https://www.indiehackers.com/starting-up",
+      "description": "Startup-focused content",
+      "expectedPostCount": 50
+    },
+    "tech": {
+      "name": "Tech",
+      "url": "https://www.indiehackers.com/tech", 
+      "description": "Technical discussions",
+      "expectedPostCount": 45
+    },
+    "artificial-intelligence": {
+      "name": "A.I.",
+      "url": "https://www.indiehackers.com/tags/artificial-intelligence",
+      "description": "AI-related posts",
+      "expectedPostCount": 30
+    },
+    "creators": {
+      "name": "Creators",
+      "url": "https://www.indiehackers.com/creators",
+      "description": "Creator economy content", 
+      "expectedPostCount": 35
+    },
+    "money": {
+      "name": "Money",
+      "url": "https://www.indiehackers.com/money",
+      "description": "Financial/revenue discussions",
+      "expectedPostCount": 40
+    },
+    "main": {
+      "name": "IndieHackers",
+      "url": "https://www.indiehackers.com/",
+      "description": "Main feed",
+      "expectedPostCount": 100
+    }
+  },
+  "mockErrors": [
+    {
+      "type": "network_timeout",
+      "message": "Request timed out after 30 seconds",
+      "category": "tech",
+      "recoverable": true
+    },
+    {
+      "type": "rate_limit",
+      "message": "Too many requests. Please wait.",
+      "category": "all",
+      "recoverable": true,
+      "retryAfter": 5000
+    },
+    {
+      "type": "parsing_error",
+      "message": "Failed to parse post data",
+      "category": "starting-up",
+      "recoverable": false
+    }
+  ]
+}
