@@ -47,9 +47,9 @@ This system allows automated data collection and analysis from Twitter without m
 5. Task Breakdown
 
 Status: In Progress
-- [ ] Setup Claude CLI command `twitter:fetch`
 - [ ] Connect Claude CLI to Playwright MCP server
 - [ ] Implement Twitter search automation with Playwright
+- [ ] You can use Playwrite to open chromium but let user login for the first time then you can manage that account
 - [ ] Extract 10 latest posts with details:
       - Post text
       - Author

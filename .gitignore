@@ -1,4 +1,36 @@
 
+# Dependencies
+node_modules/
+*.log
+
+# Browser data
+browser-data/
+browser-data-*/
+playwright-mcp-bespy/browser-data/
+
+# Reports
+report/*.md
+report/*.csv
+report/*.json
+
+# Environment
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
 # Claude Flow generated files
 .claude/settings.local.json
 .mcp.json

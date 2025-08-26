@@ -1,0 +1,46 @@
+{
+  "name": "Custom Report Template",
+  "description": "Customizable report template for Twitter data analysis",
+  "includeMetrics": true,
+  "includeEngagement": true,
+  "includeTimestamps": true,
+  "includeLinks": true,
+  "includeHashtags": true,
+  "includeMentions": true,
+  "includeComments": true,
+  "summaryStats": true,
+  "sentimentAnalysis": false,
+  "topicClustering": true,
+  "authorAnalysis": true,
+  "timeDistribution": false,
+  "engagementTrends": true,
+  "commentDepth": 5,
+  "customFields": {
+    "includeLocation": false,
+    "includeMedia": false,
+    "includeThreads": false,
+    "includeQuoteTweets": false,
+    "includeUserBio": false,
+    "includeVerificationStatus": false
+  },
+  "exportOptions": {
+    "formats": ["markdown", "csv", "json"],
+    "compression": false,
+    "emailReport": false,
+    "uploadToCloud": false
+  },
+  "filtering": {
+    "minLikes": 0,
+    "minRetweets": 0,
+    "minImpressions": 0,
+    "excludeRetweets": false,
+    "excludeReplies": false,
+    "languageFilter": null,
+    "authorFilter": null
+  },
+  "visualization": {
+    "generateCharts": true,
+    "chartTypes": ["engagement", "timeline", "wordcloud"],
+    "colorScheme": "default"
+  }
+}
