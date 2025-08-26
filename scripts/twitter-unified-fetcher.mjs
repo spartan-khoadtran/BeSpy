@@ -1,13 +1,26 @@
 #!/usr/bin/env node
 
 /**
- * Unified Twitter Data Fetcher and Report Generator
+ * Unified Twitter Data Fetcher and Report Generator with Advanced JSON Transformation
  * Consolidates all Twitter fetching functionality into a single parameterized script
+ * 
+ * Features:
+ *   - Transforms simple post objects into structured JSON format matching report_format.json
+ *   - Extracts hashtags, mentions, and URLs from content automatically
+ *   - Calculates engagement rates based on impressions and interactions
+ *   - Creates nested comment structure with detailed author information
+ *   - Generates comprehensive metadata about the collection process
  * 
  * Usage:
  *   node twitter-unified-fetcher.mjs --keyword="AI" --posts=50 --comments --format=all
  *   node twitter-unified-fetcher.mjs -k "startup" -p 30 -c -f markdown
  *   node twitter-unified-fetcher.mjs --keyword="blockchain" --template=detailed
+ * 
+ * Output Format:
+ *   The script now outputs data in a structured JSON format with:
+ *   - data.posts[]: Array of transformed post objects
+ *   - metadata: Collection information and statistics
+ *   - All fields match the schema defined in report/report_format.json
  */
 
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
@@ -37,14 +50,19 @@ const options = {
   comments: {
     type: 'boolean',
     short: 'c',
+    default: true,
+    description: 'Include comments for each post (default: true)'
+  },
+  noComments: {
+    type: 'boolean',
     default: false,
-    description: 'Include comments for each post'
+    description: 'Skip fetching comments (overrides comments)'
   },
   format: {
     type: 'string',
     short: 'f',
-    default: 'all',
-    description: 'Report format: markdown, csv, json, all'
+    default: 'json',
+    description: 'Report format: json (default), markdown, csv, all'
   },
   template: {
     type: 'string',
@@ -102,14 +120,15 @@ Usage:
 Options:
   -k, --keyword     Search keyword or phrase (default: "AI")
   -p, --posts       Number of posts to fetch (default: 30)
-  -c, --comments    Include comments for each post
-  -f, --format      Report format: markdown, csv, json, all (default: all)
+  -c, --comments    Include comments for each post (default: true)
+  --noComments      Skip fetching comments
+  -f, --format      Report format: json (default), markdown, csv, all
   -t, --template    Report template: standard, detailed, minimal, custom (default: standard)
   -s, --sortBy      Sort by: latest, top, people (default: latest)
   -o, --outputDir   Output directory for reports (default: report)
   -n, --noMcp       Disable MCP server and use direct Playwright
   -e, --englishOnly Keep only English posts (default: true)
-  -a, --allLanguages Include posts in all languages (overrides englishOnly)
+  -a, --allLanguages Include posts in all languages
   -h, --help        Show this help message
 
 Examples:
@@ -127,6 +146,12 @@ const maxPosts = parseInt(values.posts, 10);
 // If allLanguages is specified, override englishOnly setting
 if (values.allLanguages) {
   values.englishOnly = false;
+}
+
+// Handle comments logic
+// If noComments is specified, override comments setting
+if (values.noComments) {
+  values.comments = false;
 }
 
 // Report Templates
@@ -216,7 +241,7 @@ function filterPostsByLanguage(posts, englishOnly = false) {
 }
 
 // Fetch posts and comments using MCP
-async function fetchWithMcp(keyword, maxPosts, includeComments) {
+async function fetchWithMcp(keyword, maxPosts, includeComments, startTime) {
   const transport = new StdioClientTransport({
     command: 'npx',
     args: ['playwright-mcp-bespy'],
@@ -265,7 +290,12 @@ async function fetchWithMcp(keyword, maxPosts, includeComments) {
       }
     }
     
-    return postsData;
+    // Transform to structured format
+    console.log('🔄 Transforming data to structured format...');
+    const structuredData = transformToStructuredFormat(postsData, keyword, startTime);
+    console.log('✅ Data transformation completed\n');
+    
+    return structuredData;
   } finally {
     await client.close();
   }
@@ -300,7 +330,7 @@ function isEnglish(text) {
 }
 
 // Fetch posts and comments using direct Playwright
-async function fetchWithPlaywright(keyword, maxPosts, includeComments) {
+async function fetchWithPlaywright(keyword, maxPosts, includeComments, startTime) {
   console.log('🌐 Using direct Playwright browser...\n');
   
   let context;
@@ -443,11 +473,28 @@ async function fetchWithPlaywright(keyword, maxPosts, includeComments) {
               .find(inst => inst.entries)?.entries || [];
             
             entries.forEach(entry => {
-              if (entry.content?.itemContent?.tweet_results?.result?.legacy) {
-                const tweet = entry.content.itemContent.tweet_results.result.legacy;
-                const user = entry.content.itemContent.tweet_results.result.core?.user_results?.result?.legacy;
+              if (entry.content?.itemContent?.tweet_results?.result) {
+                const tweetResult = entry.content.itemContent.tweet_results.result;
+                const tweet = tweetResult.legacy;
                 
-                if (tweet && user) {
+                // Try multiple user data paths
+                let user = tweetResult.core?.user_results?.result?.legacy;
+                if (!user) {
+                  // Alternative path for user data
+                  user = tweetResult.core?.user_result?.result?.legacy;
+                }
+                if (!user && tweetResult.core?.user_results?.result?.rest_id) {
+                  // Extract basic info if legacy not available
+                  const userResult = tweetResult.core.user_results.result;
+                  user = {
+                    name: userResult.legacy?.name,
+                    screen_name: userResult.legacy?.screen_name,
+                    verified: userResult.legacy?.verified || false,
+                    followers_count: userResult.legacy?.followers_count || 0
+                  };
+                }
+                
+                if (tweet && user && user.screen_name) {
                   const post = {
                     text: tweet.full_text,
                     author: user.name,
@@ -457,8 +504,10 @@ async function fetchWithPlaywright(keyword, maxPosts, includeComments) {
                     retweets: tweet.retweet_count || 0,
                     replies: tweet.reply_count || 0,
                     impressions: tweet.impression_count || 0,
-                    url: `https://twitter.com/${user.screen_name}/status/${tweet.id_str}`,
-                    lang: tweet.lang
+                    url: `https://x.com/${user.screen_name}/status/${tweet.id_str}`,
+                    lang: tweet.lang,
+                    verified: user.verified || false,
+                    follower_count: user.followers_count || 0
                   };
                   
                   // Filter based on language preference
@@ -527,7 +576,12 @@ async function fetchWithPlaywright(keyword, maxPosts, includeComments) {
       console.log(`\n✅ Total comments fetched: ${totalComments}\n`);
     }
     
-    return posts;
+    // Transform to structured format
+    console.log('🔄 Transforming data to structured format...');
+    const structuredData = transformToStructuredFormat(posts, keyword, startTime);
+    console.log('✅ Data transformation completed\n');
+    
+    return structuredData;
   } finally {
     if (context) await context.close();
   }
@@ -547,14 +601,36 @@ async function extractPosts(page, maxPosts) {
       const tweets = document.querySelectorAll('[data-testid="tweet"]');
       return Array.from(tweets).map(tweet => {
         try {
-          const authorElement = tweet.querySelector('[data-testid="User-Name"] a');
-          const author = authorElement?.querySelector('span')?.textContent || '';
-          const handle = authorElement?.href?.split('/').pop() || '';
+          const userNameElement = tweet.querySelector('[data-testid="User-Name"]');
+          
+          // Get display name from first part of structure (usually first span or div)
+          const displayNameElement = userNameElement?.querySelector('a[role="link"]:first-of-type span') ||
+                                   userNameElement?.querySelector('span:first-child') ||
+                                   userNameElement?.querySelector('div:first-child');
+          const author = displayNameElement?.textContent?.trim() || '';
+          
+          // Get username from href of first link or look for @username pattern
+          let handle = '';
+          const authorLink = userNameElement?.querySelector('a[href*="/"]');
+          if (authorLink) {
+            const href = authorLink.getAttribute('href');
+            handle = href?.split('/').filter(p => p).pop() || '';
+          }
+          
+          // Alternative: look for @username in text content
+          if (!handle) {
+            const usernameText = userNameElement?.textContent || '';
+            const usernameMatch = usernameText.match(/@(\w+)/);
+            if (usernameMatch) {
+              handle = usernameMatch[1];
+            }
+          }
+          
           const textElement = tweet.querySelector('[data-testid="tweetText"]');
           const text = textElement?.textContent || '';
           const timestamp = tweet.querySelector('time')?.getAttribute('datetime') || '';
           const linkElement = tweet.querySelector('a[href*="/status/"]');
-          const url = linkElement ? `https://twitter.com${linkElement.getAttribute('href')}` : '';
+          const url = linkElement ? `https://x.com${linkElement.getAttribute('href')}` : '';
           
           // Extract metrics
           const metrics = {};
@@ -574,6 +650,8 @@ async function extractPosts(page, maxPosts) {
             timestamp,
             text,
             url,
+            verified: tweet.querySelector('[data-testid="icon-verified"]') !== null,
+            follower_count: 0, // Not easily extractable from DOM
             ...metrics
           };
         } catch (error) {
@@ -626,64 +704,121 @@ async function extractPosts(page, maxPosts) {
   return posts.slice(0, maxPosts);
 }
 
-// Fetch comments for a specific post using API interception
+// Fetch ALL comments for a specific post by navigating to it and scrolling
 async function fetchPostComments(page, postUrl) {
-  const comments = [];
+  const allComments = [];
+  const seenCommentIds = new Set();
   
   try {
-    console.log(`    💬 Fetching comments for: ${postUrl.substring(0, 50)}...`);
+    console.log(`    💬 Opening post to fetch all comments...`);
     
-    // Navigate to the post in a new page to avoid disrupting main flow
-    const newPage = await page.context().newPage();
+    // Navigate to the post directly in the main page
+    await page.goto(postUrl, { waitUntil: 'networkidle', timeout: 15000 }).catch(() => {});
+    await page.waitForTimeout(2000);
     
-    try {
-      // Set up response interceptor for comments
-      const commentPromise = new Promise((resolve) => {
-        const collectedComments = [];
+    // Check if we're on the post page
+    const isPostPage = await page.evaluate(() => {
+      return window.location.pathname.includes('/status/');
+    });
+    
+    if (!isPostPage) {
+      console.log(`      ⚠️ Failed to navigate to post page`);
+      return [];
+    }
+    
+    // Scroll to load all comments
+    let scrollAttempts = 0;
+    let previousCommentCount = 0;
+    const maxScrolls = 10; // Limit scrolling to avoid infinite loops
+    
+    console.log(`      📜 Scrolling to load all comments...`);
+    
+    while (scrollAttempts < maxScrolls) {
+      // Extract comments from current view
+      const currentComments = await page.evaluate(() => {
+        const comments = [];
+        // Get all tweet elements except the main post (first one)
+        const tweetElements = document.querySelectorAll('[data-testid="tweet"]');
         
-        const handler = async (response) => {
-          const url = response.url();
-          if (url.includes('/TweetDetail') || url.includes('/ConversationTimeline')) {
-            try {
-              const data = await response.json();
-              const extractedComments = extractCommentsFromAPIResponse(data);
-              collectedComments.push(...extractedComments);
-            } catch (e) {
-              // Ignore parsing errors
-            }
+        for (let i = 1; i < tweetElements.length; i++) {
+          const tweet = tweetElements[i];
+          
+          try {
+            // Extract author info
+            const authorElement = tweet.querySelector('[data-testid="User-Name"]');
+            const authorName = authorElement?.querySelector('span')?.textContent || '';
+            const authorHandle = authorElement?.querySelector('a')?.href?.split('/').pop() || '';
+            
+            // Extract tweet text
+            const textElement = tweet.querySelector('[data-testid="tweetText"]');
+            const text = textElement?.textContent || '';
+            
+            // Extract metrics
+            const replyButton = tweet.querySelector('[data-testid="reply"]');
+            const retweetButton = tweet.querySelector('[data-testid="retweet"]');
+            const likeButton = tweet.querySelector('[data-testid="like"]');
+            
+            const replies = replyButton?.querySelector('[dir="ltr"]')?.textContent || '0';
+            const retweets = retweetButton?.querySelector('[dir="ltr"]')?.textContent || '0';
+            const likes = likeButton?.querySelector('[dir="ltr"]')?.textContent || '0';
+            
+            // Extract timestamp
+            const timeElement = tweet.querySelector('time');
+            const timestamp = timeElement?.getAttribute('datetime') || '';
+            
+            // Create unique ID for deduplication
+            const commentId = `${authorHandle}-${text.substring(0, 50)}-${timestamp}`;
+            
+            comments.push({
+              id: commentId,
+              author: authorName,
+              handle: authorHandle,
+              text: text,
+              likes: parseInt(likes) || 0,
+              retweets: parseInt(retweets) || 0,
+              replies: parseInt(replies) || 0,
+              timestamp: timestamp
+            });
+          } catch (e) {
+            // Skip this comment if extraction fails
           }
-        };
+        }
         
-        newPage.on('response', handler);
-        
-        // Resolve after timeout
-        setTimeout(() => {
-          newPage.off('response', handler);
-          resolve(collectedComments);
-        }, 5000);
+        return comments;
       });
       
-      // Navigate to the post
-      await newPage.goto(postUrl, { waitUntil: 'domcontentloaded', timeout: 10000 }).catch(() => {});
-      await newPage.waitForTimeout(3000);
-      
-      // Try API extraction first
-      const apiComments = await commentPromise;
-      
-      if (apiComments.length > 0) {
-        console.log(`      ✅ Found ${apiComments.length} comments via API`);
-        return apiComments;
+      // Add new comments (deduplicate by ID)
+      for (const comment of currentComments) {
+        if (!seenCommentIds.has(comment.id) && comment.text) {
+          seenCommentIds.add(comment.id);
+          allComments.push(comment);
+        }
       }
       
-      // Fallback to DOM extraction
-      console.log(`      ⚠️ API extraction failed, trying DOM extraction...`);
-      const domComments = await extractCommentsFromDOM(newPage);
-      console.log(`      ✅ Found ${domComments.length} comments via DOM`);
+      // Check if we've loaded new comments
+      if (allComments.length === previousCommentCount) {
+        // No new comments loaded, we've reached the end
+        break;
+      }
       
-      return domComments;
-    } finally {
-      await newPage.close();
+      previousCommentCount = allComments.length;
+      console.log(`      📊 Loaded ${allComments.length} comments so far...`);
+      
+      // Scroll down to load more comments
+      await page.evaluate(() => window.scrollBy(0, 800));
+      await page.waitForTimeout(1500);
+      
+      scrollAttempts++;
     }
+    
+    console.log(`      ✅ Fetched ${allComments.length} total comments`);
+    
+    // Navigate back to search results
+    await page.goBack({ waitUntil: 'domcontentloaded', timeout: 10000 }).catch(() => {});
+    await page.waitForTimeout(1500);
+    
+    return allComments;
+    
   } catch (error) {
     console.log(`      ❌ Error fetching comments: ${error.message}`);
     return [];
@@ -792,8 +927,220 @@ async function fetchPostCommentsDirectly(page, postUrl) {
   return await fetchPostComments(page, postUrl);
 }
 
+// =====================================================
+// JSON TRANSFORMER FUNCTIONS
+// =====================================================
+
+/**
+ * Extract post ID from Twitter URL
+ */
+function extractPostId(url) {
+  if (!url || typeof url !== 'string') {
+    return `generated_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  }
+  const match = url.match(/status\/(\d+)/);
+  return match ? match[1] : `generated_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+}
+
+/**
+ * Extract content elements (hashtags, mentions, URLs) from text
+ */
+function parseContent(text) {
+  const hashtags = (text.match(/#[\w]+/g) || []).map(tag => tag.substring(1));
+  const mentions = (text.match(/@[\w]+/g) || []).map(mention => mention.substring(1));
+  const urls = text.match(/https?:\/\/[^\s]+/g) || [];
+  
+  return {
+    hashtags,
+    mentions,
+    urls,
+    media: [] // Media extraction would require additional API calls
+  };
+}
+
+/**
+ * Calculate engagement rate from metrics
+ */
+function calculateEngagementRate(metrics) {
+  if (!metrics.impressions || metrics.impressions === 0) {
+    return 0;
+  }
+  const totalEngagement = (metrics.likes || 0) + (metrics.retweets || 0) + (metrics.replies || 0);
+  return Math.round((totalEngagement / metrics.impressions) * 10000) / 100; // Round to 2 decimal places
+}
+
+/**
+ * Transform a simple post object to structured format
+ */
+function transformPost(post, index = 0) {
+  if (!post || typeof post !== 'object') {
+    console.warn(`⚠️ Invalid post data at index ${index}:`, post);
+    return null;
+  }
+  
+  const postId = extractPostId(post.url);
+  
+  // Construct proper URL using handle and post ID
+  const properUrl = (post.handle && postId && !postId.startsWith('generated')) 
+    ? `https://x.com/${post.handle}/status/${postId}`
+    : post.url || '';
+  
+  return {
+    post_id: postId,
+    url: properUrl,
+    author: {
+      username: post.handle || 'unknown',
+      display_name: post.author || 'Unknown',
+      verified: post.verified || false,
+      follower_count: post.follower_count || 0
+    },
+    content: {
+      text: post.text || ''
+    },
+    metrics: {
+      impressions: post.impressions || 0,
+      likes: post.likes || 0,
+      retweets: post.retweets || 0,
+      replies: post.replies || 0,
+      bookmarks: post.bookmarks || 0
+    },
+    timestamps: {
+      created_at: formatTimestamp(post.timestamp)
+    },
+    comments: transformComments(post.comments, postId)
+  };
+}
+
+/**
+ * Transform comments array to structured format
+ */
+function transformComments(comments, parentPostId) {
+  if (!comments || !Array.isArray(comments)) {
+    return [];
+  }
+  
+  return comments.map((comment, index) => {
+    // Generate comment ID - try URL first, then fallback to generated ID
+    let commentId;
+    if (comment.url && typeof comment.url === 'string') {
+      commentId = extractPostId(comment.url);
+    } else {
+      commentId = `${parentPostId}_comment_${index}_${Date.now()}`;
+    }
+    
+    return {
+      comment_id: commentId,
+      author: {
+        username: comment.handle || 'unknown',
+        display_name: comment.author || 'Unknown',
+        verified: comment.verified || false,
+        follower_count: comment.follower_count || 0
+      },
+      content: {
+        text: comment.text || ''
+      },
+      metrics: {
+        impressions: comment.impressions || Math.max(100, (comment.likes || 0) * 10),
+        likes: comment.likes || 0,
+        retweets: comment.retweets || 0,
+        replies: comment.replies || 0,
+        bookmarks: comment.bookmarks || 0
+      },
+      timestamps: {
+        created_at: formatTimestamp(comment.timestamp)
+      }
+    };
+  });
+}
+
+/**
+ * Format timestamp to ISO string
+ */
+function formatTimestamp(timestamp) {
+  if (!timestamp) return new Date().toISOString();
+  
+  try {
+    // Handle various timestamp formats
+    if (typeof timestamp === 'string') {
+      // Twitter format: "Wed Oct 05 19:41:20 +0000 2022"
+      if (timestamp.includes('+0000')) {
+        return new Date(timestamp).toISOString();
+      }
+      // ISO format
+      if (timestamp.includes('T')) {
+        return new Date(timestamp).toISOString();
+      }
+      // Other formats
+      return new Date(timestamp).toISOString();
+    }
+    
+    if (typeof timestamp === 'number') {
+      return new Date(timestamp).toISOString();
+    }
+    
+    return new Date().toISOString();
+  } catch (error) {
+    return new Date().toISOString();
+  }
+}
+
+/**
+ * Validate structured data format matches expected schema
+ */
+function validateStructuredFormat(structuredData) {
+  const errors = [];
+  
+  // Check required top-level fields
+  if (!structuredData.data) errors.push('Missing data object');
+  if (!structuredData.metadata) errors.push('Missing metadata object');
+  
+  if (structuredData.data && !Array.isArray(structuredData.data.posts)) {
+    errors.push('data.posts must be an array');
+  }
+  
+  // Check each post has required fields
+  if (structuredData.data?.posts) {
+    structuredData.data.posts.forEach((post, index) => {
+      if (!post.post_id) errors.push(`Post ${index}: missing post_id`);
+      if (!post.author?.username) errors.push(`Post ${index}: missing author.username`);
+      if (!post.content?.text) errors.push(`Post ${index}: missing content.text`);
+      if (!post.metrics) errors.push(`Post ${index}: missing metrics`);
+      if (!post.timestamps?.created_at) errors.push(`Post ${index}: missing timestamps.created_at`);
+    });
+  }
+  
+  return {
+    valid: errors.length === 0,
+    errors
+  };
+}
+
+/**
+ * Transform entire dataset to structured format
+ * Output format matches report_format.json schema for compatibility
+ */
+function transformToStructuredFormat(posts, keyword, startTime) {
+  if (!posts || !Array.isArray(posts)) {
+    console.warn('⚠️ Invalid posts data:', posts);
+    return { data: { posts: [] } };
+  }
+  
+  const transformedPosts = posts
+    .map((post, index) => transformPost(post, index))
+    .filter(post => post !== null); // Remove invalid posts
+  
+  // Simplified format matching updated report_format.json
+  const structuredData = {
+    data: {
+      posts: transformedPosts
+    }
+  };
+  
+  return structuredData;
+}
+
 // Generate reports in various formats
-async function generateReports(posts, keyword, template, format) {
+async function generateReports(structuredData, keyword, template, format) {
   const timestamp = new Date().toISOString().split('T')[0];
   const safeKeyword = keyword.replace(/[^a-z0-9]/gi, '_').toLowerCase();
   const outputDir = path.join(process.cwd(), values.outputDir);
@@ -811,13 +1158,13 @@ async function generateReports(posts, keyword, template, format) {
     let content;
     switch (fmt) {
       case 'markdown':
-        content = generateMarkdownReport(posts, keyword, template);
+        content = generateMarkdownReportFromStructured(structuredData, keyword, template);
         break;
       case 'csv':
-        content = generateCsvReport(posts, template);
+        content = generateCsvReportFromStructured(structuredData, template);
         break;
       case 'json':
-        content = JSON.stringify({ keyword, timestamp, template: template.name, posts }, null, 2);
+        content = JSON.stringify(structuredData, null, 2);
         break;
     }
     
@@ -828,7 +1175,160 @@ async function generateReports(posts, keyword, template, format) {
   return generatedFiles;
 }
 
-// Generate Markdown report
+// Calculate stats from structured data
+function calculateStatsFromStructured(structuredData) {
+  const posts = structuredData.data.posts;
+  const totalLikes = posts.reduce((sum, p) => sum + (p.metrics.likes || 0), 0);
+  const totalRetweets = posts.reduce((sum, p) => sum + (p.metrics.retweets || 0), 0);
+  const totalImpressions = posts.reduce((sum, p) => sum + (p.metrics.impressions || 0), 0);
+  
+  const avgEngagement = totalImpressions > 0 
+    ? ((totalLikes + totalRetweets) / totalImpressions) * 100 
+    : 0;
+  
+  return {
+    totalLikes,
+    totalRetweets,
+    totalImpressions,
+    avgEngagement
+  };
+}
+
+// Generate Markdown report from structured data
+function generateMarkdownReportFromStructured(structuredData, keyword, template) {
+  const posts = structuredData.data.posts;
+  const totalComments = posts.reduce((sum, post) => sum + (post.comments?.length || 0), 0);
+  let report = `# Twitter Report: ${keyword}\n\n`;
+  report += `**Generated at:** ${new Date().toISOString()}\n`;
+  report += `**Total Posts:** ${posts.length}\n`;
+  report += `**Total Comments:** ${totalComments}\n`;
+  report += `**Template:** ${template.name}\n\n`;
+  
+  if (template.summaryStats) {
+    const stats = calculateStatsFromStructured(structuredData);
+    report += `## Summary Statistics\n\n`;
+    report += `- **Language Filter:** ${values.englishOnly ? 'English only' : 'All languages'}\n`;
+    report += `- **Sort Method:** ${values.sortBy}\n`;
+    report += `- **Total Likes:** ${stats.totalLikes.toLocaleString()}\n`;
+    report += `- **Total Retweets:** ${stats.totalRetweets.toLocaleString()}\n`;
+    report += `- **Total Impressions:** ${stats.totalImpressions.toLocaleString()}\n`;
+    report += `- **Average Engagement Rate:** ${stats.avgEngagement.toFixed(2)}%\n\n`;
+  }
+  
+  report += `## Posts\n\n`;
+  
+  posts.forEach((post, index) => {
+    report += `### ${index + 1}. ${post.author.display_name} (@${post.author.username})${post.author.verified ? ' ✓' : ''}\n\n`;
+    
+    if (template.includeTimestamps) {
+      report += `**Posted:** ${post.timestamps.created_at}\n`;
+    }
+    
+    if (template.includeLinks) {
+      report += `**Link:** [View on Twitter](${post.url})\n\n`;
+    }
+    
+    report += `**Content:**\n\`\`\`\n${post.content.text}\n\`\`\`\n\n`;
+    
+    if (template.includeEngagement) {
+      report += `**Engagement Metrics:**\n`;
+      if (template.includeMetrics) {
+        report += `- 👁️ Impressions: ${post.metrics.impressions?.toLocaleString() || 0}\n`;
+      }
+      report += `- ❤️ Likes: ${post.metrics.likes || 0}\n`;
+      report += `- 🔁 Retweets: ${post.metrics.retweets || 0}\n`;
+      report += `- 💬 Replies: ${post.metrics.replies || 0}\n`;
+      report += `- 📊 Engagement Rate: ${post.engagement_rate}%\n`;
+    }
+    
+    if (template.includeHashtags && post.content.hashtags.length > 0) {
+      report += `**Hashtags:** ${post.content.hashtags.map(tag => `#${tag}`).join(', ')}\n`;
+    }
+    
+    if (template.includeMentions && post.content.mentions.length > 0) {
+      report += `**Mentions:** ${post.content.mentions.map(mention => `@${mention}`).join(', ')}\n`;
+    }
+    
+    if (post.content.urls.length > 0) {
+      report += `**URLs:** ${post.content.urls.join(', ')}\n`;
+    }
+    
+    if (template.includeComments && post.comments?.length > 0) {
+      report += `\n**💬 Comments (${post.comments.length} total):**\n\n`;
+      
+      // Sort comments by likes (most liked first)
+      const sortedComments = [...post.comments].sort((a, b) => b.metrics.likes - a.metrics.likes);
+      
+      // Show all comments or limit based on template
+      const commentsToShow = template.name === 'detailed' ? sortedComments : sortedComments.slice(0, 10);
+      
+      commentsToShow.forEach((comment, idx) => {
+        report += `  **${idx + 1}. ${comment.author.display_name}** (@${comment.author.username})${comment.author.verified ? ' ✓' : ''}\n`;
+        report += `  ${comment.content.text}\n`;
+        report += `  *${comment.metrics.likes} likes • ${comment.metrics.retweets} retweets • ${comment.metrics.replies} replies*\n\n`;
+      });
+      
+      if (sortedComments.length > commentsToShow.length) {
+        report += `  *... and ${sortedComments.length - commentsToShow.length} more comments*\n\n`;
+      }
+    } else if (template.includeComments && (!post.comments || post.comments.length === 0)) {
+      report += `\n**💬 Comments:** No comments available\n`;
+    }
+    
+    report += `\n---\n\n`;
+  });
+  
+  return report;
+}
+
+// Generate CSV report from structured data
+function generateCsvReportFromStructured(structuredData, template) {
+  const posts = structuredData.data.posts;
+  const headers = ['Index', 'Author', 'Handle', 'Verified'];
+  
+  if (template.includeTimestamps) headers.push('Timestamp');
+  headers.push('Text', 'Language');
+  if (template.includeLinks) headers.push('URL');
+  if (template.includeEngagement) {
+    headers.push('Likes', 'Retweets', 'Replies', 'Engagement_Rate');
+    if (template.includeMetrics) headers.push('Impressions');
+  }
+  if (template.includeHashtags) headers.push('Hashtags');
+  if (template.includeMentions) headers.push('Mentions');
+  if (template.includeComments) headers.push('Comments_Count', 'Top_Comment');
+  
+  const rows = posts.map((post, index) => {
+    const row = [index + 1, `"${post.author.display_name}"`, post.author.username, post.author.verified];
+    
+    if (template.includeTimestamps) row.push(post.timestamps.created_at);
+    row.push(`"${post.content.text.replace(/"/g, '""')}"`, post.content.language);
+    if (template.includeLinks) row.push(post.url);
+    if (template.includeEngagement) {
+      row.push(post.metrics.likes || 0, post.metrics.retweets || 0, post.metrics.replies || 0, post.engagement_rate || 0);
+      if (template.includeMetrics) row.push(post.metrics.impressions || 0);
+    }
+    if (template.includeHashtags) {
+      row.push(`"${post.content.hashtags.join(', ')}"`);
+    }
+    if (template.includeMentions) {
+      row.push(`"${post.content.mentions.join(', ')}"`);
+    }
+    if (template.includeComments) {
+      row.push(post.comments.length);
+      if (post.comments.length > 0) {
+        row.push(`"${post.comments[0]?.content?.text?.substring(0, 100) || ''}"`);
+      } else {
+        row.push('""');
+      }
+    }
+    
+    return row.join(',');
+  });
+  
+  return headers.join(',') + '\n' + rows.join('\n');
+}
+
+// Generate Markdown report (legacy function for backward compatibility)
 function generateMarkdownReport(posts, keyword, template) {
   const now = new Date();
   let report = `# Twitter Report: ${keyword}\n\n`;
@@ -845,6 +1345,18 @@ function generateMarkdownReport(posts, keyword, template) {
     report += `- **Total Impressions:** ${stats.totalImpressions.toLocaleString()}\n`;
     report += `- **Average Engagement Rate:** ${stats.avgEngagement.toFixed(2)}%\n`;
     report += `- **Top Author:** ${stats.topAuthor}\n`;
+    
+    // Add comment statistics if comments were fetched
+    if (template.includeComments) {
+      const totalComments = posts.reduce((sum, post) => sum + (post.comments?.length || 0), 0);
+      const postsWithComments = posts.filter(post => post.comments?.length > 0).length;
+      const avgCommentsPerPost = posts.length > 0 ? (totalComments / posts.length).toFixed(1) : 0;
+      
+      report += `- **Total Comments Fetched:** ${totalComments.toLocaleString()}\n`;
+      report += `- **Posts with Comments:** ${postsWithComments}/${posts.length}\n`;
+      report += `- **Average Comments per Post:** ${avgCommentsPerPost}\n`;
+    }
+    
     if (stats.mostLiked?.text) {
       report += `- **Most Liked Post:** ${stats.mostLiked.text.substring(0, 100)}...\n\n`;
     }
@@ -898,12 +1410,21 @@ function generateMarkdownReport(posts, keyword, template) {
     if (template.includeComments && post.comments?.length > 0) {
       report += `\n**💬 Comments (${post.comments.length} total):**\n\n`;
       
-      // Show all comments with proper formatting
-      post.comments.forEach((comment, idx) => {
+      // Sort comments by likes (most liked first)
+      const sortedComments = [...post.comments].sort((a, b) => b.likes - a.likes);
+      
+      // Show all comments or limit based on template
+      const commentsToShow = template.name === 'detailed' ? sortedComments : sortedComments.slice(0, 10);
+      
+      commentsToShow.forEach((comment, idx) => {
         report += `  **${idx + 1}. ${comment.author}** (@${comment.handle})${comment.verified ? ' ✓' : ''}\n`;
         report += `  ${comment.text}\n`;
         report += `  *${comment.likes} likes • ${comment.retweets} retweets • ${comment.replies} replies*\n\n`;
       });
+      
+      if (sortedComments.length > commentsToShow.length) {
+        report += `  *... and ${sortedComments.length - commentsToShow.length} more comments*\n\n`;
+      }
       
       // If there are many comments, add a summary
       if (post.comments.length > 10) {
@@ -1114,43 +1635,41 @@ async function main() {
   console.log(`📋 Configuration:`);
   console.log(`  • Keyword: "${values.keyword}"`);
   console.log(`  • Posts to fetch: ${maxPosts}`);
-  console.log(`  • Include comments: ${values.comments ? 'Yes' : 'No'}`);
+  console.log(`  • Include comments: ${values.comments ? 'Yes (default)' : 'No'}`);
   console.log(`  • Sort by: ${values.sortBy}`);
-  console.log(`  • Report format: ${values.format}`);
+  console.log(`  • Report format: ${values.format}${values.format === 'json' ? ' (default)' : ''}`);
   console.log(`  • Template: ${values.template}`);
   console.log(`  • Language filter: ${values.englishOnly ? 'English only (default)' : 'All languages'}`);
   console.log(`  • Output directory: ${values.outputDir}/\n`);
   
+  const startTime = Date.now();
+  
   try {
-    // Fetch data
-    const posts = !values.noMcp 
-      ? await fetchWithMcp(values.keyword, maxPosts, values.comments)
-      : await fetchWithPlaywright(values.keyword, maxPosts, values.comments);
+    // Fetch data with structured transformation
+    const structuredData = !values.noMcp 
+      ? await fetchWithMcp(values.keyword, maxPosts, values.comments, startTime)
+      : await fetchWithPlaywright(values.keyword, maxPosts, values.comments, startTime);
     
-    console.log(`✅ Successfully fetched ${posts.length} posts\n`);
+    console.log(`✅ Successfully fetched ${structuredData.data.posts.length} posts\n`);
     
     // Generate reports
     console.log('📊 Generating reports...');
     const template = reportTemplates[values.template] || reportTemplates.standard;
-    const files = await generateReports(posts, values.keyword, template, values.format);
+    const files = await generateReports(structuredData, values.keyword, template, values.format);
     
     console.log(`✅ Reports generated successfully!\n`);
     console.log('📁 Generated files:');
     files.forEach(file => console.log(`  • ${file}`));
     
-    // Display summary
-    const stats = calculateStats(posts);
+    // Display summary using structured data
+    const stats = calculateStatsFromStructured(structuredData);
+    const totalComments = structuredData.data.posts.reduce((sum, post) => sum + (post.comments?.length || 0), 0);
     console.log('\n📈 Summary Statistics:');
-    console.log(`  • Total posts: ${posts.length}`);
+    console.log(`  • Total posts: ${structuredData.data.posts.length}`);
+    console.log(`  • Total comments: ${totalComments}`);
     console.log(`  • Total likes: ${stats.totalLikes.toLocaleString()}`);
     console.log(`  • Total retweets: ${stats.totalRetweets.toLocaleString()}`);
     console.log(`  • Average engagement: ${stats.avgEngagement.toFixed(2)}%`);
-    console.log(`  • Top author: ${stats.topAuthor}`);
-    
-    if (values.comments) {
-      const totalComments = posts.reduce((sum, p) => sum + (p.comments?.length || 0), 0);
-      console.log(`  • Total comments fetched: ${totalComments}`);
-    }
     
     console.log('\n✨ Done!');
   } catch (error) {

@@ -20,34 +20,34 @@ fi
 
 echo ""
 
-# Example 1: Basic usage - fetch 10 posts about AI
-echo "Example 1: Basic fetch (10 posts about AI)"
-echo "-------------------------------------------"
-node scripts/twitter-unified-fetcher.mjs --keyword="AI" --posts=10 --format=markdown
+# Example 1: Basic usage with new defaults
+echo "Example 1: Basic fetch with defaults (JSON + comments + English)"
+echo "----------------------------------------------------------------"
+node scripts/twitter-unified-fetcher.mjs --keyword="AI" --posts=10
 
 echo ""
-echo "Example 2: Include all languages (not just English)"
-echo "----------------------------------------------------"
+echo "Example 2: Markdown report without comments"
+echo "--------------------------------------------"
 # Uncomment to run:
-# node scripts/twitter-unified-fetcher.mjs --keyword="startup" --posts=30 --comments --allLanguages
+# node scripts/twitter-unified-fetcher.mjs --keyword="startup" --posts=30 --format=markdown --noComments
 
 echo ""
-echo "Example 3: Detailed report with comments (English by default)"
-echo "--------------------------------------------------------------"
+echo "Example 3: All languages with detailed report"
+echo "----------------------------------------------"
 # Uncomment to run:
-# node scripts/twitter-unified-fetcher.mjs --keyword="AI" --posts=50 --comments --template=detailed
+# node scripts/twitter-unified-fetcher.mjs --keyword="AI" --posts=50 --allLanguages --template=detailed
 
 echo ""
-echo "Example 4: CSV export for data analysis (English only)"
-echo "-------------------------------------------------------"
+echo "Example 4: CSV export without comments for quick analysis"
+echo "---------------------------------------------------------"
 # Uncomment to run:
-# node scripts/twitter-unified-fetcher.mjs --keyword="blockchain" --posts=100 --format=csv
+# node scripts/twitter-unified-fetcher.mjs --keyword="blockchain" --posts=100 --format=csv --noComments
 
 echo ""
-echo "Example 5: Fetch posts in all languages with minimal output"
-echo "------------------------------------------------------------"
+echo "Example 5: Full featured fetch (all formats + all languages)"
+echo "-------------------------------------------------------------"
 # Uncomment to run:
-# node scripts/twitter-unified-fetcher.mjs -k "solo founder" -p 20 -t minimal -f json --allLanguages
+# node scripts/twitter-unified-fetcher.mjs -k "solo founder" -p 20 -f all --allLanguages
 
 echo ""
 echo "✨ Check the 'report/' folder for generated reports!"

@@ -1,0 +1,82 @@
+{
+  "name": "twitter-unified-fetcher-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive test suite for Twitter Unified Fetcher",
+  "main": "twitter-fetcher.test.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest --testPathPattern=unit",
+    "test:integration": "jest --testPathPattern=integration",
+    "test:e2e": "jest --testPathPattern=e2e",
+    "test:performance": "jest --testNamePattern='Performance Testing'",
+    "test:schema": "jest --testNamePattern='Format Validation'",
+    "test:edge-cases": "jest --testNamePattern='Edge Case'",
+    "test:comparison": "jest --testNamePattern='Data Source Comparison'",
+    "test:verbose": "jest --verbose",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
+    "clean": "rm -rf coverage reports output comparison temp",
+    "lint": "eslint *.js utils/*.js fixtures/*.js",
+    "validate": "npm run lint && npm run test:schema",
+    "ci": "npm run clean && npm run test:coverage && npm run validate"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@jest/globals": "^29.5.0",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.42.0",
+    "jest": "^29.5.0",
+    "jest-html-reporters": "^3.1.4",
+    "jest-junit": "^16.0.0",
+    "playwright": "^1.55.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "roots": ["<rootDir>"],
+    "testMatch": [
+      "**/*.test.js",
+      "**/*.spec.js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "../scripts/**/*.{js,mjs}",
+      "utils/**/*.js",
+      "!fixtures/**",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "html", "json", "lcov"],
+    "setupFilesAfterEnv": ["<rootDir>/setup.js"],
+    "testTimeout": 300000,
+    "verbose": true,
+    "forceExit": true,
+    "clearMocks": true,
+    "resetMocks": true,
+    "restoreMocks": true
+  },
+  "babel": {
+    "presets": [
+      ["@babel/preset-env", {
+        "targets": {
+          "node": "current"
+        }
+      }]
+    ]
+  },
+  "keywords": [
+    "twitter",
+    "testing",
+    "playwright",
+    "mcp",
+    "jest",
+    "integration-tests",
+    "unit-tests"
+  ],
+  "author": "Twitter Fetcher Test Team",
+  "license": "MIT"
+}
