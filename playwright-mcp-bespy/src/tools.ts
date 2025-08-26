@@ -31,6 +31,7 @@ import tabs from './tools/tabs.js';
 import screenshot from './tools/screenshot.js';
 import wait from './tools/wait.js';
 import verify from './tools/verify.js';
+import { twitterTools } from './tools/twitter.js';
 
 import type { Tool } from './tools/tool.js';
 import type { FullConfig } from './config.js';
@@ -53,6 +54,7 @@ export const allTools: Tool<any>[] = [
   ...tabs,
   ...wait,
   ...verify,
+  ...twitterTools,
 ];
 
 export function filteredTools(config: FullConfig) {
