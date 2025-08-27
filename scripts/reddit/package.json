@@ -1,0 +1,22 @@
+{
+  "name": "reddit-scraper",
+  "version": "1.0.0",
+  "description": "Reddit scraper using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node index.ts",
+    "test": "ts-node index.ts test",
+    "search": "ts-node index.ts search",
+    "trending": "ts-node index.ts trending"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

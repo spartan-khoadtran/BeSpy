@@ -1,5 +1,21 @@
 # Claude Code Configuration - SPARC Development Environment
 
+## 📂 Project Output Directory Rules
+
+### Reddit Scraper Reports
+All Reddit scraper output files MUST be saved to:
+```
+report/reddit/
+```
+
+Example commands:
+```bash
+npx ts-node reddit-api-search.ts search "keyword" -o report/reddit/keyword-results.json
+npx ts-node reddit-api-search.ts trending -o report/reddit/trending.md
+```
+
+# Claude Code Configuration - SPARC Development Environment
+
 ## 🚨 CRITICAL: CONCURRENT EXECUTION & FILE MANAGEMENT
 
 **ABSOLUTE RULES**:
