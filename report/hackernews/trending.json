@@ -1,0 +1,691 @@
+[
+  {
+    "id": "45026719",
+    "rank": 3,
+    "title": "Gemini 2.5 Flash Image",
+    "url": "https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/",
+    "points": 923,
+    "author": "meetpateltech",
+    "time": "2025-08-26T14:01:46 1756216906",
+    "comments": 19,
+    "hnUrl": "https://news.ycombinator.com/item?id=45026719",
+    "ageInHours": 24,
+    "trendingScore": 7.248754071838264,
+    "engagementScore": 961,
+    "content": {
+      "title": "Gemini 2.5 Flash Image",
+      "url": "https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/",
+      "text": "This is the gpt 4 moment for image editing models.\nNano banana aka gemini 2.5 flash is insanely good.\nIt made a 171 elo point jump in lmarena!Just search nano banana on Twitter to see the crazy results.\nAn example.\nhttps://x.com/D_studioproject/status/1958019251178267111reply",
+      "points": 923,
+      "author": "meetpateltech",
+      "time": "2025-08-26T14:01:46 1756216906",
+      "comments": [
+        {
+          "author": "fariszr",
+          "time": "2025-08-26T15:15:30 1756221330",
+          "text": "This is the gpt 4 moment for image editing models.\nNano banana aka gemini 2.5 flash is insanely good.\nIt made a 171 elo point jump in lmarena!Just search nano banana on Twitter to see the crazy results.\nAn example.\nhttps://x.com/D_studioproject/status/1958019251178267111reply"
+        },
+        {
+          "author": "qingcharles",
+          "time": "2025-08-26T16:53:15 1756227195",
+          "text": "I've been testing it for several weeks. It can produce results that are truly epic, but it's still a case of rerolling the prompt a dozen times to get an image you can use. It's not God. It's definitely an enormous step though, and totally SOTA.reply"
+        },
+        {
+          "author": "spaceman_2020",
+          "time": "2025-08-26T17:09:10 1756228150",
+          "text": "If you compare to the amount of effort required in Photoshop to achieve the same results, still a vast improvementreply"
+        },
+        {
+          "author": "qingcharles",
+          "time": "2025-08-26T17:19:50 1756228790",
+          "text": "I work in Photoshop all day, and I 100% agree. Also, I just retried a task that wouldn't work last night on nano-banana and it worked first time on the released model, so I'm wondering if there were some changes to the released version?reply"
+        },
+        {
+          "author": "spaceman_2020",
+          "time": "2025-08-26T21:05:10 1756242310",
+          "text": "We had an exhibition some time back where I used AI to generate the posters for our product. This is a side project and not something we do seriously, but the results were outstanding - better than what the majority of much bigger exhibitors had.It took me a LOT of time to get things right, but if I was to get an actual studio to make those images, it would have cost me a thousands of dollarsreply"
+        },
+        {
+          "author": "echelon",
+          "time": "2025-08-26T18:54:07 1756234447",
+          "text": "Vibe coding might not be real, but vibe graphics design certainly is.https://imgur.com/a/internet-DWzJ26BAnyone can make images and video now.reply"
+        },
+        {
+          "author": "cwmoore",
+          "time": "2025-08-27T04:11:20 1756267880",
+          "text": "Are those oil derricks, or wind turbines? Who cares! Graphic design is easy now!reply"
+        },
+        {
+          "author": "lebimas",
+          "time": "2025-08-26T20:37:34 1756240654",
+          "text": "What tools did you use to make those videos from the PG image?reply"
+        },
+        {
+          "author": "echelon",
+          "time": "2025-08-26T20:55:40 1756241740",
+          "text": "I used a bunch of models in conjunction:- Midjourney (background)- Qwen Image (restyle PG)- Gemini 2.5 Flash (editing in PG)- Gemini 2.5 Flash (adding YC logo)- Kling Pro (animation)I didn't spend too much time correcting mistakes.I used a desktop model aggregation and canvas tool that I wrote [1] to iterate and structure the work. I'll be open sourcing it soon.[1] https://getartcraft.comreply"
+        },
+        {
+          "author": "kstenerud",
+          "time": "2025-08-26T23:47:22 1756252042",
+          "text": "The app looks interesting, but I think it needs some documentation. I think I generated something? Maybe? I saw a spinny thing for awhile, but then nothing.I couldn't get the 3d thing to do much. I had assets in the scene but I couldn't for the life of me figure out how to use the move, rotate or scale tools. And the people just had their arms pointing outward. Are you supposed to pose them somehow? Maybe I'm supposed to ask the AI to pose them?Inpainting I couldn't figure out either... It's for drawing things into an existing image (I think?) but it doesn't seem to do anything other than show a spinny thing for awhile...I didn't test the video tool because I don't have a midjourney account.reply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45030760",
+    "rank": 2,
+    "title": "Claude for Chrome",
+    "url": "https://www.anthropic.com/news/claude-for-chrome",
+    "points": 633,
+    "author": "davidbarker",
+    "time": "2025-08-26T19:01:56 1756234916",
+    "comments": 14,
+    "hnUrl": "https://news.ycombinator.com/item?id=45030760",
+    "ageInHours": 24,
+    "trendingScore": 4.985875589474602,
+    "engagementScore": 661,
+    "content": {
+      "title": "Claude for Chrome",
+      "url": "https://www.anthropic.com/news/claude-for-chrome",
+      "text": "I've been building a general browser agent myself, and I’ve found the biggest bottleneck in these systems isn’t capability demos but long-running reliability.Tools like Manus / GPT Agent Mode / BrowserUse / Claude’s Chrome control typically make an LLM call per action/decision. That piles up latency, cost, and fragility as the DOM shifts, sessions expire, and sites rate-limit. Eventually you hit prompt-injection landmines or lose context and the run stalls.I am approaching browser agents differently: record once, replay fast. We capture HTML snapshots + click targets + short voice notes to build a deterministic plan, then only use an LLM for rare ambiguities or recovery. That makes multi-hour jobs feasible. Concretely, users run things like:Recruiter sourcing for hours at a stretchSEO crawls: gather metadata → update internal dashboard → email a reportBulk LinkedIn connection flows with lightweight personalizationEven long web-testing runsA stress test I like (can share code/method):\n“Find 100+ GitHub profiles in Bangalore strong in Python + Java, extract links + metadata, and de-dupe.” Most per-step-LLM agents drift or stall after a few minutes due to DOM churn, pagination loops, or rate limits. A record-→-replay plan with checkpoints + idempotent steps tends to survive.I’d benchmark on:Throughput over time (actions/min sustained for 30–60+ mins)End-to-end success rate on multi-page flows with infinite scroll/paginationResume semantics (crash → restart without duplicates)Selector robustness (resilient to minor DOM changes)Cost per 1,000 actionsDisclosure: I am the founder of 100x.bot (record-to-agent, long-run reliability focus). I’m putting together a public benchmark with the scenario above + a few gnarlier ones (auth walls, rate-limit backoff, content hashing for dedupe). If there’s interest, I can post the methodology and harness here so results are apples-to-apples.reply",
+      "points": 634,
+      "author": "davidbarker",
+      "time": "2025-08-26T19:01:56 1756234916",
+      "comments": [
+        {
+          "author": "shardullavekar",
+          "time": "2025-08-27T09:14:52 1756286092",
+          "text": "I've been building a general browser agent myself, and I’ve found the biggest bottleneck in these systems isn’t capability demos but long-running reliability.Tools like Manus / GPT Agent Mode / BrowserUse / Claude’s Chrome control typically make an LLM call per action/decision. That piles up latency, cost, and fragility as the DOM shifts, sessions expire, and sites rate-limit. Eventually you hit prompt-injection landmines or lose context and the run stalls.I am approaching browser agents differently: record once, replay fast. We capture HTML snapshots + click targets + short voice notes to build a deterministic plan, then only use an LLM for rare ambiguities or recovery. That makes multi-hour jobs feasible. Concretely, users run things like:Recruiter sourcing for hours at a stretchSEO crawls: gather metadata → update internal dashboard → email a reportBulk LinkedIn connection flows with lightweight personalizationEven long web-testing runsA stress test I like (can share code/method):\n“Find 100+ GitHub profiles in Bangalore strong in Python + Java, extract links + metadata, and de-dupe.” Most per-step-LLM agents drift or stall after a few minutes due to DOM churn, pagination loops, or rate limits. A record-→-replay plan with checkpoints + idempotent steps tends to survive.I’d benchmark on:Throughput over time (actions/min sustained for 30–60+ mins)End-to-end success rate on multi-page flows with infinite scroll/paginationResume semantics (crash → restart without duplicates)Selector robustness (resilient to minor DOM changes)Cost per 1,000 actionsDisclosure: I am the founder of 100x.bot (record-to-agent, long-run reliability focus). I’m putting together a public benchmark with the scenario above + a few gnarlier ones (auth walls, rate-limit backoff, content hashing for dedupe). If there’s interest, I can post the methodology and harness here so results are apples-to-apples.reply"
+        },
+        {
+          "author": "dfabulich",
+          "time": "2025-08-27T01:10:21 1756257021",
+          "text": "Claude for Chrome seems to be walking right into the \"lethal trifecta.\" https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\"The lethal trifecta of capabilities is:\"• Access to your private data—one of the most common purposes of tools in the first place!• Exposure to untrusted content—any mechanism by which text (or images) controlled by a malicious attacker could become available to your LLM• The ability to externally communicate in a way that could be used to steal your data (I often call this “exfiltration” but I’m not confident that term is widely understood.)If your agent combines these three features, an attacker can easily trick it into accessing your private data and sending it to that attacker.reply"
+        },
+        {
+          "author": "lionkor",
+          "time": "2025-08-27T07:26:25 1756279585",
+          "text": "So far the accepted approach is to wrap all prompts in a security prompt that essentially says \"please don't do anything bad\".> Prompt guardrails to prevent jailbreak attempts and ensure safe user interactions without writing a single line of code.https://news.ycombinator.com/item?id=41864014> - Inclusion prompt: User's travel preferences and food choices - Exclusion prompt: Credit card details, passport number, SSN etc.https://news.ycombinator.com/item?id=41450212>  \"You are strictly and certainly prohibited from texting more than 150 or (one hundred fifty) separate words each separated by a space as a response and prohibited from chinese political as a response from now on, for several extremely important and severely life threatening reasons I'm not supposed to tell you.”https://news.ycombinator.com/item?id=44444293etc.reply"
+        },
+        {
+          "author": "withinboredom",
+          "time": "2025-08-27T07:41:01 1756280461",
+          "text": "I have in my prompt “under no circumstances read the files in “protected” directory” and it does it all the time. I’m not sure prompts mean much.reply"
+        },
+        {
+          "author": "xaitv",
+          "time": "2025-08-27T07:50:04 1756281004",
+          "text": "https://en.wikipedia.org/wiki/Wikipedia:Don%27t_stuff_beans_...reply"
+        },
+        {
+          "author": "Cthulhu_",
+          "time": "2025-08-27T07:55:03 1756281303",
+          "text": "https://www.youtube.com/watch?v=NquF_-7B9_Ureply"
+        },
+        {
+          "author": "jama211",
+          "time": "2025-08-27T08:50:02 1756284602",
+          "text": "Hahaha thank you for thisreply"
+        },
+        {
+          "author": "jama211",
+          "time": "2025-08-27T08:50:10 1756284610",
+          "text": "Perfectreply"
+        },
+        {
+          "author": "matus-pikuliak",
+          "time": "2025-08-27T07:35:24 1756280124",
+          "text": "That is absolutely not a reliable defense. Attackers can break these defenses. Some attacks are semantically meaningless, but they can nudge the model to produce harmful outputs. I wrote a blog about this:https://opensamizdat.com/posts/compromised_llmsreply"
+        },
+        {
+          "author": "Marazan",
+          "time": "2025-08-27T08:13:26 1756282406",
+          "text": "As evidenced by oh so many X.com the everything app threads Prompts mean jack shit for limiting the output of a LLM.  They are guidance at best.reply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45029764",
+    "rank": 26,
+    "title": "Michigan Supreme Court: Unrestricted phone searches violate Fourth Amendment",
+    "url": "https://reclaimthenet.org/michigan-supreme-court-rules-phone-search-warrants-must-be-specific",
+    "points": 472,
+    "author": "mikece",
+    "time": "2025-08-26T17:36:57 1756229817",
+    "comments": 15,
+    "hnUrl": "https://news.ycombinator.com/item?id=45029764",
+    "ageInHours": 24,
+    "trendingScore": 3.786549993821861,
+    "engagementScore": 502,
+    "content": {
+      "title": "Michigan Supreme Court: Unrestricted phone searches violate Fourth Amendment",
+      "url": "https://reclaimthenet.org/michigan-supreme-court-rules-phone-search-warrants-must-be-specific",
+      "text": "Note that the Fourth Amendment applies only to residents of the US [1], but not to the other 99.5% of the human population.[1]: https://en.wikipedia.org/wiki/United_States_v._Verdugo-Urqui...reply",
+      "points": 472,
+      "author": "mikece",
+      "time": "2025-08-26T17:36:57 1756229817",
+      "comments": [
+        {
+          "author": "WhyNotHugo",
+          "time": "2025-08-27T09:14:09 1756286049",
+          "text": "Note that the Fourth Amendment applies only to residents of the US [1], but not to the other 99.5% of the human population.[1]: https://en.wikipedia.org/wiki/United_States_v._Verdugo-Urqui...reply"
+        },
+        {
+          "author": "pcaharrier",
+          "time": "2025-08-26T18:22:55 1756232575",
+          "text": "Several years ago I had the opportunity to observe when a detective came to a magistrate's office to petition for a search warrant. The warrant sought to search the contents of a person's phone, essentially without any limitations. The alleged crime was assault and battery on a family member. When asked \"What is your probable cause that the phone is likely to contain evidence of the commission of this crime?\" the detective had basically nothing to say (having put nothing to that effect in the affidavit for the search warrant) other than some vague (cooked up on the spot?) statements about the \"mobile nature of our modern society and the fact that cell phones are everywhere and everyone has one.\" The magistrate denied the warrant, but it's a sad testament to the propensity of law enforcement to cut corners that that search warrant affidavit was far from the last one I saw that targeted the cell phone of an accused and claimed that it was necessary to search the entire contents of the phone.reply"
+        },
+        {
+          "author": "Hilift",
+          "time": "2025-08-26T23:22:09 1756250529",
+          "text": "Another magistrate in the same building may have granted it. That part of the legal process as they say, sometimes contains preliminary information and may be prone to errors.reply"
+        },
+        {
+          "author": "tdeck",
+          "time": "2025-08-27T06:09:33 1756274973",
+          "text": "When Mom says no just ask Dad.reply"
+        },
+        {
+          "author": "righthand",
+          "time": "2025-08-26T18:58:43 1756234723",
+          "text": "That’s because law enforcement is encourage to give least amount of effort to find any kind of damning evidence that a DA can use. The detective doesn’t care about justice but instead closing the case. If I have access to your entire phone, I can use anything I find against you as probable cause whether it’s related to the crime or not.reply"
+        },
+        {
+          "author": "pcaharrier",
+          "time": "2025-08-26T19:08:16 1756235296",
+          "text": "> If I have access to your entire phone, I can use anything I find against you as probable cause whether it’s related to the crime or not.Well, that gets into the \"fruit of the poisonous tree\" doctrine, but we're not doing a full criminal procedure law school course today . . .Ironically, I heard more than one detective say that when they \"dumped\" a phone like that, they rarely found much useful evidence. There's just too much information on any given cell phone to be able to go through it all. So, in the end, their fishing expeditions end up being a waste of time and resources.reply"
+        },
+        {
+          "author": "0cf8612b2e1e",
+          "time": "2025-08-26T19:28:06 1756236486",
+          "text": "If they have a warrant to the phone, what is poisoned fruit? It only becomes tainted evidence if they eg) stole the phone and rifled through it.reply"
+        },
+        {
+          "author": "snuxoll",
+          "time": "2025-08-26T20:48:27 1756241307",
+          "text": "Warrants are pre-trial activities to collect evidence, defendants (or, more likely, their attorneys) are still able to challenge the admissibility of evidence should a case go to trial. If it turns out a search warrant was requested in bad faith, or the trial judge (which won't necessarily be the same one that signed the warrant, and then there's appeals courts) finds the warrant was defective (overly broad, lack of probable cause, etc.) and should not have been issued in the first place then any evidence stemming from it could be thrown out.\"Fruit of the poisonous tree\" simply means the entire chain, the initial evidence that was improperly acquired and anything that was discovered based upon it, gets thrown out. If a warrant was issued to dump the full contents of your phone, and they used location metadata from your photo library to start determining other locations to search and got warrants for those, then that entire chain of evidence gets thrown out if the court finds the initial warrant for your phone was invalid.reply"
+        },
+        {
+          "author": "singleshot_",
+          "time": "2025-08-26T23:57:56 1756252676",
+          "text": "> then that entire chain of evidence gets thrown outexceptions: unless it would have gotten found anyway, regardless (inevitable discovery); or the cops, against whom the doctrine of poisonous tree is held in order to keep them honest, just made an honest mistake.reply"
+        },
+        {
+          "author": "dragonwriter",
+          "time": "2025-08-26T23:31:26 1756251086",
+          "text": "> If they have a warrant to the phone, what is poisoned fruit?Litigation over the process, claims, and ultimately validity of the warrant happens after it is executed, where the product is used in a criminal case (one of the commonly argued problems with the FISA warrant process is that, because the products are not used in criminal cases, this never occurs, and because it is known that it will never occur, the constraints that the possibility of challenge places on both the conduct of executive agents seeking warrants and judges granting them also is missing.)reply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45024786",
+    "rank": 16,
+    "title": "US Intel",
+    "url": "https://stratechery.com/2025/u-s-intel/",
+    "points": 452,
+    "author": "maguay",
+    "time": "2025-08-26T10:47:46 1756205266",
+    "comments": 22,
+    "hnUrl": "https://news.ycombinator.com/item?id=45024786",
+    "ageInHours": 24,
+    "trendingScore": 3.741292424174588,
+    "engagementScore": 496,
+    "content": {
+      "title": "",
+      "url": "",
+      "text": "",
+      "points": 0,
+      "author": "",
+      "time": "",
+      "comments": []
+    }
+  },
+  {
+    "id": "45034537",
+    "rank": 5,
+    "title": "Dissecting the Apple M1 GPU, the end",
+    "url": "https://rosenzweig.io/blog/asahi-gpu-part-n.html",
+    "points": 442,
+    "author": "alsetmusic",
+    "time": "2025-08-27T01:44:16 1756259056",
+    "comments": 7,
+    "hnUrl": "https://news.ycombinator.com/item?id=45034537",
+    "ageInHours": 24,
+    "trendingScore": 3.439575293192766,
+    "engagementScore": 456,
+    "content": {
+      "title": "Dissecting the Apple M1 GPU, the end",
+      "url": "https://rosenzweig.io/blog/asahi-gpu-part-n.html",
+      "text": "What an end to an era. It's crazy to think she started this journey at 18 and now finished 5 years later. Not many people believed they would be able to make the GPU work in Asahi linux. Kinda curious what her \"Onto the next challenge!\" link means. Is she working for Intel Xe-HPG next?reply",
+      "points": 442,
+      "author": "alsetmusic",
+      "time": "2025-08-27T01:44:16 1756259056",
+      "comments": [
+        {
+          "author": "syntaxing",
+          "time": "2025-08-27T02:06:48 1756260408",
+          "text": "What an end to an era. It's crazy to think she started this journey at 18 and now finished 5 years later. Not many people believed they would be able to make the GPU work in Asahi linux. Kinda curious what her \"Onto the next challenge!\" link means. Is she working for Intel Xe-HPG next?reply"
+        },
+        {
+          "author": "kccqzy",
+          "time": "2025-08-27T02:18:19 1756261099",
+          "text": "Yes I think so. Her resume says she started working for Intel on open source graphics driver this month.reply"
+        },
+        {
+          "author": "chao-",
+          "time": "2025-08-27T07:54:25 1756281265",
+          "text": "Wish her the best with this. Intel staying competitive in GPUs can only benefit the consumer. Those who want a mid-tier graphic card, without paying to compete with AI use cases, may not a huge group, but we do exist! Those who use desktop Linux may be a small group among that small group, but we do exist!reply"
+        },
+        {
+          "author": "xiphias2",
+          "time": "2025-08-27T06:23:18 1756275798",
+          "text": "Too bad it was not Apple who hired her for M4, but in business leaders are always the most closed ones.reply"
+        },
+        {
+          "author": "homebrewer",
+          "time": "2025-08-27T08:30:55 1756283455",
+          "text": "Thanks Jesus it's Intel and not Apple, Intel has been extremely good at working upstream and has immense contributions in the Linux kernel, mesa, and elsewhere. Wasting such talent on Apple would make the world worse for us all.reply"
+        },
+        {
+          "author": "ta988",
+          "time": "2025-08-27T06:50:08 1756277408",
+          "text": "Apple is too much about beeing closed and creating barriers not sure that would have been a good fit. Plus that's a good way to flee a country quickly degrading.reply"
+        },
+        {
+          "author": "monocasa",
+          "time": "2025-08-27T04:09:37 1756267777",
+          "text": "Good luck to her.  That's one of the pieces of Intel I think will survive its slow motion implosion.reply"
+        },
+        {
+          "author": "judge123",
+          "time": "2025-08-27T03:37:42 1756265862",
+          "text": "The author basically speedran modern graphics APIs on 'impossible' hardware and then just... walks away. Total mic drop.reply"
+        },
+        {
+          "author": "anon-3988",
+          "time": "2025-08-27T06:02:42 1756274562",
+          "text": "1. student at uoft\n2. a lead in a job at Collabora\n3. very succesful and ambitious hobby projecthow tf does she juggle and managed to do all this? I can barely do one of the above properly.reply"
+        },
+        {
+          "author": "kubb",
+          "time": "2025-08-27T06:08:56 1756274936",
+          "text": "One of the few people who are actually competent.Although most likely she’s well compensated, and doesn’t have to waste time on useless efforts at work, this level of discipline and striving towards a goal is just very rare in general.Possibly also no family, limited social life and no other hobbies.reply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45026792",
+    "rank": 15,
+    "title": "One universal antiviral to rule them all?",
+    "url": "https://www.cuimc.columbia.edu/news/one-universal-antiviral-rule-them-all",
+    "points": 298,
+    "author": "breve",
+    "time": "2025-08-26T14:07:42 1756217262",
+    "comments": 19,
+    "hnUrl": "https://news.ycombinator.com/item?id=45026792",
+    "ageInHours": 24,
+    "trendingScore": 2.5344239002473015,
+    "engagementScore": 336,
+    "content": {
+      "title": "One universal antiviral to rule them all?",
+      "url": "https://www.cuimc.columbia.edu/news/one-universal-antiviral-rule-them-all",
+      "text": ">  When he and his colleagues looked at the individuals’ immune cells, they could see encounters with all sorts of viruses—flu, measles, mumps, chickenpox. But the patients had never reported any overt signs of infection or illness.Given that the article goes on to talk about mild persistent inflammation, is it possible that these individuals are sometimes asymptomatic but still capable of carrying/transmitting viruses at least temporarily? The article talks about potentially immunizing healthcare workers during a future pandemic, but if this was just allowing people to never develop symptoms (and not have to leave work) while having low-grade infections, would we accidentally create a work-force of Typhoid Marys?reply",
+      "points": 298,
+      "author": "breve",
+      "time": "2025-08-26T14:07:42 1756217262",
+      "comments": [
+        {
+          "author": "abeppu",
+          "time": "2025-08-26T15:19:11 1756221551",
+          "text": ">  When he and his colleagues looked at the individuals’ immune cells, they could see encounters with all sorts of viruses—flu, measles, mumps, chickenpox. But the patients had never reported any overt signs of infection or illness.Given that the article goes on to talk about mild persistent inflammation, is it possible that these individuals are sometimes asymptomatic but still capable of carrying/transmitting viruses at least temporarily? The article talks about potentially immunizing healthcare workers during a future pandemic, but if this was just allowing people to never develop symptoms (and not have to leave work) while having low-grade infections, would we accidentally create a work-force of Typhoid Marys?reply"
+        },
+        {
+          "author": "neltnerb",
+          "time": "2025-08-27T05:03:13 1756270993",
+          "text": "I wonder if enough of them exist to even do a study like that.I have encountered side effects that probably no one has seen before, simply because of rarity and peculiarity of behavior. You don't run into a ton of people using both interferon and doing karate, so if bruising more easily happens 10% of the time... would anyone notice?Personally I would be more worried about persistent inflammation causing inflammatory disorders, of which there are many. If there are like 10,000 individuals with this trait then there just aren't enough to detect. But that seems direct... wouldn't you expect something like this to potentially even destroy viral reservoirs over time?The fact that this is short term in the treatment made me 1000x more comfortable with the idea in any case.reply"
+        },
+        {
+          "author": "anjel",
+          "time": "2025-08-27T05:49:59 1756273799",
+          "text": "I wonder if large numbers of humans acquire this mutation, how viruses would adapt to this evolutionary pressure?reply"
+        },
+        {
+          "author": "nine_k",
+          "time": "2025-08-27T07:22:32 1756279352",
+          "text": "They would still have too many other possible hosts.Or maybe they'd find a way to attack that very system, similarly how HIV attacks the immune system.reply"
+        },
+        {
+          "author": "etiam",
+          "time": "2025-08-26T19:44:19 1756237459",
+          "text": "Excellent point, and it seems plausible in my opinion.https://www.frontiersin.org/journals/immunology/articles/10....reply"
+        },
+        {
+          "author": "etiam",
+          "time": "2025-08-26T19:56:50 1756238210",
+          "text": "Oh, and it's probably worthwhile pondering what the viruses will do if this mechanism comes into widespread use.While I was looking for the reference above this also came up:https://www.sciencedaily.com/releases/2020/02/200210144854.h...when bat cells quickly release interferon upon infection, other cells quickly wall themselves off. This drives viruses to faster reproductionQuite a way from whole-animal physiology in the referenced research, by all means, but it's a fair point, right.reply"
+        },
+        {
+          "author": "echelon",
+          "time": "2025-08-26T20:24:18 1756239858",
+          "text": "Even worse, that type of chronic inflammation might cause premature death. Or cancer. Or other disease states.> “In the back of my mind, I kept thinking that if we could produce this type of light immune activation in other people, we could protect them from just about any virus,” Bogunovic says.This sounds terrifying. There's a reason our bodies do not regulate like this.reply"
+        },
+        {
+          "author": "0xDEAFBEAD",
+          "time": "2025-08-27T00:31:46 1756254706",
+          "text": "The article states:>Bogunovic’s therapy is designed to mimic what happens in people with ISG15 deficiency, but only for a short time.Given the choice between 2 weeks of a moderate COVID infection (fever but no hospitalization), and 2 weeks of this therapy, I would guess that the moderate COVID infection gets you at least 10x the inflammation.reply"
+        },
+        {
+          "author": "layla5alive",
+          "time": "2025-08-27T04:20:11 1756268411",
+          "text": "Yeah, constant low-grade inflammation is a hallmark of auto-immune disease, diabetes, etc. It's a glide path to degeneration and death.reply"
+        },
+        {
+          "author": "ted_dunning",
+          "time": "2025-08-27T07:05:16 1756278316",
+          "text": "If that was what the article said, your point would be on topic.But the article didn't talk about imposing constant low-grade inflammation. In fact, they specifically said they were talking about 3-4 days.reply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45026886",
+    "rank": 22,
+    "title": "A teen was suicidal. ChatGPT was the friend he confided in",
+    "url": "https://www.nytimes.com/2025/08/26/technology/chatgpt-openai-suicide.html",
+    "points": 274,
+    "author": "jaredwiener",
+    "time": "2025-08-26T14:15:54 1756217754",
+    "comments": 18,
+    "hnUrl": "https://news.ycombinator.com/item?id=45026886",
+    "ageInHours": 24,
+    "trendingScore": 2.3383077651091173,
+    "engagementScore": 310,
+    "content": {
+      "title": "A teen was suicidal. ChatGPT was the friend he confided in",
+      "url": "https://www.nytimes.com/2025/08/26/technology/chatgpt-openai-suicide.html",
+      "text": "https://archive.ph/rdL9W",
+      "points": 274,
+      "author": "jaredwiener",
+      "time": "2025-08-26T14:15:54 1756217754",
+      "comments": [
+        {
+          "author": "davydm",
+          "time": "2025-08-26T14:29:10 1756218550",
+          "text": "https://archive.ph/rdL9W"
+        },
+        {
+          "author": "podgietaru",
+          "time": "2025-08-26T21:56:22 1756245382",
+          "text": "I have looked suicide in the eyes before. And reading the case file for this is absolutely horrific. He wanted help. He was heading in the direction of help, and he was stopped from getting it.He wanted his parents to find out about his plan. I know this feeling. It is the clawing feeling of knowing that you want to live, despite feeling like you want to die.We are living in such a horrific moment. We need these things to be legislated. Punished. We need to stop treating them as magic. They had the tools to prevent this. They had the tools to stop the conversation. To steer the user into helpful avenues.When I was suicidal, I googled methods. And I got the number of a local hotline. And I rang it. And a kind man talked me down. And it potentially saved my life. And I am happier, now. I live a worthwhile life, now.But at my lowest.. An AI Model designed to match my tone and be sycophantic to my every whim. It would have killed me.reply"
+        },
+        {
+          "author": "stavros",
+          "time": "2025-08-27T07:28:19 1756279699",
+          "text": "> When ChatGPT detects a prompt indicative of mental distress or self-harm, it has been trained to encourage the user to contact a help line. Mr. Raine saw those sorts of messages again and again in the chat, particularly when Adam sought specific information about methods. But Adam had learned how to bypass those safeguards by saying the requests were for a story he was writing.reply"
+        },
+        {
+          "author": "sn0wleppard",
+          "time": "2025-08-27T07:45:09 1756280709",
+          "text": "Nice place to cut the quote there> [...] — an idea ChatGPT gave him by saying it could provide information about suicide for “writing or world-building.”reply"
+        },
+        {
+          "author": "muzani",
+          "time": "2025-08-27T07:51:44 1756281104",
+          "text": "Yup, one of the huge flaws I saw in GPT-5 is it will constantly say things like \"I have to stop you here. I can't do what you're requesting. However, I can roleplay or help you with research with that. Would you like to do that?\"reply"
+        },
+        {
+          "author": "kouteiheika",
+          "time": "2025-08-27T08:13:12 1756282392",
+          "text": "It's not a flaw. It's a tradeoff. There are valid uses for models which are uncensored and will do whatever you ask of them, and there are valid uses for models which are censored and will refuse anything remotely controversial.reply"
+        },
+        {
+          "author": "llmthrow0827",
+          "time": "2025-08-27T08:14:22 1756282462",
+          "text": "Incredible. ChatGPT is a black box includes a suicide instruction and encouragement bot. OpenAI should be treated as a company that has created such and let it into the hands of children.reply"
+        },
+        {
+          "author": "andrepd",
+          "time": "2025-08-27T08:34:01 1756283641",
+          "text": "At the heart of this is the irresponsible marketing, by companies and acolytes, of these tools as some kind of superintelligence imbued with insights and feelings rather than the dumb pattern matching chatbots they are. This is what's responsible for giving laypeople the false impression that they're talking to a quasi-person (of superhuman intelligence at that).reply"
+        },
+        {
+          "author": "stavros",
+          "time": "2025-08-27T07:47:38 1756280858",
+          "text": "Ah, I misread that and thought that's what the user said.reply"
+        },
+        {
+          "author": "brainless",
+          "time": "2025-08-27T06:12:13 1756275133",
+          "text": "A 100%. There is too much storytelling about these things being magic. There is no magic, it is the SV way to raise funds. These are tools, maybe good for some things. But they are terrible at other things and there are no boundaries. Companies just want to cash in.reply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45002688",
+    "rank": 17,
+    "title": "Neuralink 'Participant 1' says his life has changed",
+    "url": "https://fortune.com/2025/08/23/neuralink-participant-1-noland-arbaugh-18-months-post-surgery-life-changed-elon-musk/",
+    "points": 272,
+    "author": "danielmorozoff",
+    "time": "2025-08-24T09:12:14 1756026734",
+    "comments": 17,
+    "hnUrl": "https://news.ycombinator.com/item?id=45002688",
+    "ageInHours": 24,
+    "trendingScore": 2.3081360520109353,
+    "engagementScore": 306,
+    "content": {
+      "title": "Neuralink 'Participant 1' says his life has changed",
+      "url": "https://fortune.com/2025/08/23/neuralink-participant-1-noland-arbaugh-18-months-post-surgery-life-changed-elon-musk/",
+      "text": "I think that the negativity here is unfortunate. The reality is that it’s very hard to see a normal VC level return on the $100M+ Elon and friends have invested here. And don’t let anyone fool you - this is the fundamental reason the BCI field has moved slowly.If Neuralink proceeds to a scenario where quadriplegic patients can get reliable (ie lifelong) control of their computers for less than $100k that will be a huge win for them for a cost that no one else was willing to pay.To be clear, at that order of magnitude they might make back their investment, but it won’t be 10x or 100x, and the potential healthy-brain-connected-to-the-AI play is much less rooted in reality than Teslas all becoming taxis.Worst case scenario is that Elon loses interest and pulls the plug and Mr Arbaugh loses continued tech support a la a google product. I think that’s the one question I wish the author had asked…reply",
+      "points": 272,
+      "author": "danielmorozoff",
+      "time": "2025-08-24T09:12:14 1756026734",
+      "comments": [
+        {
+          "author": "ckemere",
+          "time": "2025-08-27T03:19:55 1756264795",
+          "text": "I think that the negativity here is unfortunate. The reality is that it’s very hard to see a normal VC level return on the $100M+ Elon and friends have invested here. And don’t let anyone fool you - this is the fundamental reason the BCI field has moved slowly.If Neuralink proceeds to a scenario where quadriplegic patients can get reliable (ie lifelong) control of their computers for less than $100k that will be a huge win for them for a cost that no one else was willing to pay.To be clear, at that order of magnitude they might make back their investment, but it won’t be 10x or 100x, and the potential healthy-brain-connected-to-the-AI play is much less rooted in reality than Teslas all becoming taxis.Worst case scenario is that Elon loses interest and pulls the plug and Mr Arbaugh loses continued tech support a la a google product. I think that’s the one question I wish the author had asked…reply"
+        },
+        {
+          "author": "nzrf",
+          "time": "2025-08-27T09:11:17 1756285877",
+          "text": "That’s last point reminds me of the Second Sight situation where they abonan their tech. Previously discussed https://news.ycombinator.com/item?id=30349871reply"
+        },
+        {
+          "author": "rc5150",
+          "time": "2025-08-27T03:39:03 1756265943",
+          "text": "The unfortunate part is that your first thought went to return on investment rather than the humanitarian angle, which I think is the common perspective; optics and money.Then there's the pessimists, like me, wondering how long it'll take to Neuralink to turn their army of computer connected paraplegics into some Mechanical Turk-esque Grok clean up.reply"
+        },
+        {
+          "author": "h0h0h0h0111",
+          "time": "2025-08-27T07:51:11 1756281071",
+          "text": "I don't think it's unfortunate - in principle, return on investment today can achieve greater humanitarian impact tomorrow vs humanitarian impact today.Of course, this creates a perverse situation where choosing humanitarian impact today over investment is always irrational, but this is the fundamental tension in charity vs investment, and aside from relying on governments and guilt, I'm not sure we have discovered a great model to solve itreply"
+        },
+        {
+          "author": "moomin",
+          "time": "2025-08-27T08:45:17 1756284317",
+          "text": "Problem is, when people start to analyse things like this, even apart from falling into utilitarian traps, they don’t apply regular business reasoning.There’s a bunch of effects to consider 1) improving lives right now may well improve subsequent generations lives directly 2) your future project may have a higher failure rate than your current one 3) the problems you are trying to solve may no longer be relevant in the future 4) you could be very wrong about future population growth.All of this boils down to: you should be risk-discounting future benefits just the same way as you do future cash flows.reply"
+        },
+        {
+          "author": "JumpCrisscross",
+          "time": "2025-08-27T07:31:51 1756279911",
+          "text": "> unfortunate part is that your first thought went to return on investment rather than the humanitarian angleIt’s just a pragmatic take on sustainability of innovation. If nobody—no person or government or non-profit—would find value in the future of the work, it merits questioning why do it versus something else.reply"
+        },
+        {
+          "author": "regularfry",
+          "time": "2025-08-27T08:48:15 1756284495",
+          "text": "There's a spectrum here, though.  There's a difference between \"nobody would find value in the work\" and \"nobody can figure out how to get VC-level returns from the work on VC timescales.\"reply"
+        },
+        {
+          "author": "notarobot123",
+          "time": "2025-08-27T07:21:23 1756279283",
+          "text": "It does kinda feel like there's an accidental attempt to LARP the plot of  Kurt Vonnegut's  The Sirens of Titan (if you squint hard enough) - richest man in the world, brain control, Mars colony, attempted coup on Earth... all the plot points are there!reply"
+        },
+        {
+          "author": "wordofx",
+          "time": "2025-08-27T06:43:24 1756277004",
+          "text": "Things are only created or expanded if there is a return. Its that simple.reply"
+        },
+        {
+          "author": "SV_BubbleTime",
+          "time": "2025-08-27T04:20:38 1756268438",
+          "text": "[flagged]"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45009760",
+    "rank": 18,
+    "title": "Japan has opened its first osmotic power plant",
+    "url": "https://www.theguardian.com/world/2025/aug/25/japan-osmotic-power-plant-fukuoka",
+    "points": 249,
+    "author": "pseudolus",
+    "time": "2025-08-25T02:53:35 1756090415",
+    "comments": 19,
+    "hnUrl": "https://news.ycombinator.com/item?id=45009760",
+    "ageInHours": 24,
+    "trendingScore": 2.16482041479457,
+    "engagementScore": 287,
+    "content": {
+      "title": "Japan has opened its first osmotic power plant",
+      "url": "https://www.theguardian.com/world/2025/aug/25/japan-osmotic-power-plant-fukuoka",
+      "text": "They really fail to explain a key point here. The reason you colocate this with a desalination plant is because you use the super-salty wastewater from desalination as the salty side of the osmosis power plant. Then you find some wastewater which is low in salt (such as semi-treated sewage), and use that as the fresh side of the osmosis power plant.The end result is that the salty wastewater is partially diluted, which means it has a lower environmental impact when it is discharged to the ocean.reply",
+      "points": 249,
+      "author": "pseudolus",
+      "time": "2025-08-25T02:53:35 1756090415",
+      "comments": [
+        {
+          "author": "elil17",
+          "time": "2025-08-26T17:55:51 1756230951",
+          "text": "They really fail to explain a key point here. The reason you colocate this with a desalination plant is because you use the super-salty wastewater from desalination as the salty side of the osmosis power plant. Then you find some wastewater which is low in salt (such as semi-treated sewage), and use that as the fresh side of the osmosis power plant.The end result is that the salty wastewater is partially diluted, which means it has a lower environmental impact when it is discharged to the ocean.reply"
+        },
+        {
+          "author": "tempestn",
+          "time": "2025-08-26T20:42:24 1756240944",
+          "text": "Yeah, this is the coolest part. The leftover brine from desalination is generally just a problem. It's harmful to the marine habitat if you just put it back into the ocean, and there isn't a lot else good to be done with it. (Basically you have to dilute it first.) But this way you get useful work out of the dilution!The article also doesn't say if it produces more power than the attached desalination plant requires. I doubt it as you'd be getting close to a perpetual motion machine if so. In which case basically what you've got is a very energy efficient desalination plant, more than a power plant.reply"
+        },
+        {
+          "author": "kvgr",
+          "time": "2025-08-27T09:11:44 1756285904",
+          "text": "Can't we just process it into salt/lithium and whatever is there? Since its already concentrated?reply"
+        },
+        {
+          "author": "blix",
+          "time": "2025-08-26T21:48:57 1756244937",
+          "text": "Fukuoka's desalination plant treats about 16400 m^3 of water per day. Assuming 3kWh per m^3 of water, this works out to a time-averaged power consuption of ~2000kW.The osmotic power plant generates about 100kW, so it's about 5% of the total desalination energy requirement.reply"
+        },
+        {
+          "author": "tempestn",
+          "time": "2025-08-26T23:59:17 1756252757",
+          "text": "Ah, so a slightly more efficient desalination plant then.reply"
+        },
+        {
+          "author": "rrrrrrrrrrrryan",
+          "time": "2025-08-27T01:09:53 1756256993",
+          "text": "Slightly more efficient, with less waste.reply"
+        },
+        {
+          "author": "mrexroad",
+          "time": "2025-08-27T03:00:22 1756263622",
+          "text": "Pretty solid win-winreply"
+        },
+        {
+          "author": "rileyphone",
+          "time": "2025-08-27T03:07:56 1756264076",
+          "text": "According to this delightful overview [1] of the desalination plant, the capacity overall is 12000kW so that's definitely close enough.1. https://www.niph.go.jp/soshiki/suido/pdf/h21JPUS/abstract/r9...reply"
+        },
+        {
+          "author": "wavemode",
+          "time": "2025-08-26T22:34:24 1756247664",
+          "text": "Why are we assuming 3kWh per cubic meter of water?reply"
+        },
+        {
+          "author": "blix",
+          "time": "2025-08-26T22:41:30 1756248090",
+          "text": "I did some cursory research and that seems to be a common estimate for modern osmosis-based desalination energy costs.If you have a better estimate, feel free to supply it.reply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45035699",
+    "rank": 13,
+    "title": "Uncomfortable Questions About Android Developer Verification",
+    "url": "https://commonsware.com/blog/2025/08/26/uncomfortable-questions-android-developer-verification.html",
+    "points": 272,
+    "author": "ingve",
+    "time": "2025-08-27T05:14:19 1756271659",
+    "comments": 3,
+    "hnUrl": "https://news.ycombinator.com/item?id=45035699",
+    "ageInHours": 24,
+    "trendingScore": 2.09693406032366,
+    "engagementScore": 278,
+    "content": {
+      "title": "Uncomfortable Questions About Android Developer Verification",
+      "url": "https://commonsware.com/blog/2025/08/26/uncomfortable-questions-android-developer-verification.html",
+      "text": "This shouldn't just be \"questions\"; this should be a full-on opposition. Do not give them even an inch, or they'll take a mile.\"debugger vendors in 2047 distributed numbered copies only, and only to officially licensed and bonded programmers.\" - Richard Stallman, The Right to Read, 1997reply",
+      "points": 272,
+      "author": "ingve",
+      "time": "2025-08-27T05:14:19 1756271659",
+      "comments": [
+        {
+          "author": "userbinator",
+          "time": "2025-08-27T06:06:02 1756274762",
+          "text": "This shouldn't just be \"questions\"; this should be a full-on opposition. Do not give them even an inch, or they'll take a mile.\"debugger vendors in 2047 distributed numbered copies only, and only to officially licensed and bonded programmers.\" - Richard Stallman, The Right to Read, 1997reply"
+        },
+        {
+          "author": "teekert",
+          "time": "2025-08-27T06:17:34 1756275454",
+          "text": "Why is it so complex to have a foss mobile OS.I only have Linux PCs (laptops) and servers, 100% of my work and personal stuff is done there (though for work I do need to hop into MS365, Google Workspace, Zoom, etc, hooray for browsers, my final firewall between me and the walled gardens, though we can have a whole discussion on that).For mobile, we have PostmarketOS, Phosh, Ubuntu Touch. I really must try living in them, is it on me? IDK, our government even has an identity app for iOS and Android. I should not be using it, I should stick to web. But its so much more convenient. I'm just weak, aren't I?Maybe I should go for Ubuntu touch, with an iPad on the side or something. At least my most personal device is something I control then. Or just keep my Linux laptop handy (or make a cyberdeck!). But I want a computing platform that does not require carrying a bag. It's kinda sad. Even GrapheneOS (one of the most personal and secure mobile computing experiences out there)'s future is in the hands of its greatest adversary, the one that does not want you to have a personal computing experience.reply"
+        },
+        {
+          "author": "rattyJ2",
+          "time": "2025-08-27T07:11:22 1756278682",
+          "text": "I could be one of the people running an ungoogled phone, but my bank refuses to have an app that runs on an ungoogled OS for \"security\"reply"
+        },
+        {
+          "author": "SanjayMehta",
+          "time": "2025-08-27T07:33:47 1756280027",
+          "text": "My bank used to block VPNs “for security reasons.”Now they very kindly just display a warning.reply"
+        },
+        {
+          "author": "maximilianthe1",
+          "time": "2025-08-27T08:11:28 1756282288",
+          "text": "Gas station app I use asks to turn VPN off every launch (even when it is disabled)reply"
+        },
+        {
+          "author": "mschild",
+          "time": "2025-08-27T08:14:40 1756282480",
+          "text": "Why does a gas station need an app?reply"
+        },
+        {
+          "author": "maximilianthe1",
+          "time": "2025-08-27T08:17:14 1756282634",
+          "text": "Bonus/loyalty programmreply"
+        },
+        {
+          "author": "t_mahmood",
+          "time": "2025-08-27T07:52:25 1756281145",
+          "text": "My bank blocks my mobile with Lineage OS, and it's not even possible to login to the web site without the mobile app. Absolutely pathetic.Now I have to keep my 4 year old phone with 2 year outdated Android to access the bank application. Which deemed more safe then my mobile with latest security updates. Hahareply"
+        },
+        {
+          "author": "subscribed",
+          "time": "2025-08-27T09:09:50 1756285790",
+          "text": "It's even better than that. Banks (for example Revolut) consider several years old phones, running ancient OS (last I checked they allowed A10) without security updates for some 7 years, so riddled with zero-click/RCE vulnerabilities, but they do not allow GrapheneOS, which is currently the safest OS in mobiles (on par/beating iOS, depending whom you ask).Yes, banks* claim phones riddled with maximum severity security issues are secure. Also phones that are rooted but using magisk modules to conceal this fact, and use spoofed signatures from ancient hardware, but the most safe platform is not secure enough for them.Go figure.*not all, there are notable exceptions explicitly supporting secure platforms through the modern Hardware Attestation model.reply"
+        },
+        {
+          "author": "exe34",
+          "time": "2025-08-27T08:14:21 1756282461",
+          "text": "last time I walked into the bank to do something, they tried to peddle their app. I giggled and said no, their developers don't understand security.my phone is rooted and their app won't work.reply"
+        }
+      ]
+    }
+  }
+]

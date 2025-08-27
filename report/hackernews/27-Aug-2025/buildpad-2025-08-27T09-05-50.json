@@ -1,0 +1,67 @@
+{
+  "keyword": "buildpad",
+  "stories": [
+    {
+      "title": "BuildPad – A platform that helps founders go from idea to successful product",
+      "url": "https://news.ycombinator.com/item?id=44176248",
+      "hnUrl": "https://news.ycombinator.com/item?id=44176248",
+      "points": 4,
+      "author": "peter_d_sherman",
+      "commentCount": 0,
+      "createdAt": "3 months ago",
+      "content": null,
+      "comments": [],
+      "topComments": []
+    },
+    {
+      "title": "Show HN: Buildpad – Build products that people actually want",
+      "url": "https://news.ycombinator.com/item?id=42430923",
+      "hnUrl": "https://news.ycombinator.com/item?id=42430923",
+      "points": 2,
+      "author": "felixheikka",
+      "commentCount": 1,
+      "createdAt": "8 months ago",
+      "content": null,
+      "comments": [],
+      "topComments": []
+    },
+    {
+      "title": "My 2 year journey to building a successful product ($2,700 MRR)",
+      "url": "https://news.ycombinator.com/item?id=43049081",
+      "hnUrl": "https://news.ycombinator.com/item?id=43049081",
+      "points": 42,
+      "author": "davidheikka",
+      "commentCount": 14,
+      "createdAt": "6 months ago",
+      "content": null,
+      "comments": [],
+      "topComments": []
+    },
+    {
+      "title": "Talking to people before building took me from failed projects to $9K in revenue",
+      "url": "https://news.ycombinator.com/item?id=43089949",
+      "hnUrl": "https://news.ycombinator.com/item?id=43089949",
+      "points": 5,
+      "author": "felixheikka",
+      "commentCount": 8,
+      "createdAt": "6 months ago",
+      "content": null,
+      "comments": [],
+      "topComments": []
+    },
+    {
+      "title": "Learned to code, built a SaaS, now have paid customers from 40 countries",
+      "url": "https://news.ycombinator.com/item?id=42975014",
+      "hnUrl": "https://news.ycombinator.com/item?id=42975014",
+      "points": 4,
+      "author": "davidheikka",
+      "commentCount": 4,
+      "createdAt": "7 months ago",
+      "content": null,
+      "comments": [],
+      "topComments": []
+    }
+  ],
+  "extractedAt": "2025-08-27T09:05:50.032Z",
+  "totalStories": 5
+}

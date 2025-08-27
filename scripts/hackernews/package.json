@@ -1,0 +1,20 @@
+{
+  "name": "hackernews-scraper",
+  "version": "1.0.0",
+  "description": "HackerNews scraper with search and trending functionality",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "search": "node index.js search",
+    "trending": "node index.js trending",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
