@@ -1,0 +1,558 @@
+{
+  "name": "tech",
+  "displayName": "Tech",
+  "url": "https://www.indiehackers.com/tech",
+  "articles": [
+    {
+      "url": "https://www.indiehackers.com/post/v3lMstbEzxkheKuLf7cH",
+      "title": "Hitting a high 6-figure ARR thanks to first-mover advantage and an AI tech moat",
+      "strategy": "direct",
+      "postId": "v3lMstbEzxkheKuLf7cH",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "Hitting a high 6-figure ARR thanks to first-mover advantage and an AI tech moat\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                August 22, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          \n            CompanyDubverseFounderAnuja DhawanRevenue>$41K a monthAnuja Dhawan built an AI product before it was cool, enjoying first-mover advantage and then surfing the AI wave.Now, Dubverse is bringing in a high 6-figure ARR, with 4M dubbed videos. And she just launched DubX — the world’s first AI model built natively for dubbing.Here's Anuja on how she did it. 👇ContentsBuilding a global tech business from IndiaStarting upBuilding a tech moatTargeting prosumersGood timingGrowth loops that workedCharging from day oneParting adviceWhat's next?Building a global tech business from IndiaI’ve been a part of India’s buzzing startup ecosystem for almost a decade, working across different companies in the SaaS world. Over the years, I’ve seen how the energy and ambition here have grown, and I’ve always carried the dream of building something large and meaningful from India.In 2021, that dream took shape with Dubverse, a platform that helps creators, enterprises, and educators make their videos multilingual through AI-powered dubbing and subtitling. Our vision has always been simple but bold: to build a global technology business from India that competes at the highest stage.Today, Dubverse has a high 6-figure ARR. It has powered more than 4M videos and 11M dubbed minutes for creators worldwide, with a growing base of paying customers across industries. It’s the most exciting time to be building from India, and we’re just getting started!And I'm excited to announce the launch of DubX, the world’s first AI model built natively for dubbing. Until now, dubbing has been a clunky workflow: You’d input text, the system would convert it into speech, and that’s it. The voice was flat, the emotion got lost, and the translated video felt disconnected from the original. DubX changes that completely.Starting upThe early days of Dubverse were some of the most exciting. After my co-founder, Varshul, and I started, we quickly connected with two other builders who were experimenting in a very similar space. We met online, things just clicked, and they ended up moving cities to join us.That kind of serendipity gave the founding team a lot of momentum and belief in what we were building.Varshul and I had known each other for almost a decade. He’s the technical brain behind Dubverse, while I’m the one out talking to people and opening doors. Together, we built the first scrappy demo: a simple form where you could input a video and instantly see it translated into another language.This was back in 2020, before the AI hype cycle we’re in today. For most people, experiencing that “magic” for the first time felt almost unreal.I’ll never forget one of our earliest demos with a creator. Midway through, they literally jumped out of their chair. They told us, “This takes us weeks to do normally… how are you doing it in real time?” Those moments validated that we were onto something. It gave our small team the energy to keep pushing forward until we found product-market fit.Building a tech moatFrom day one, our north star has been clear: If the internet is dominated by English, Dubverse should unlock everything non-English. That clarity shaped our tech decisions.In the beginning, we leaned on off-the-shelf models to validate the idea and test whether people would actually care about multilingual content. Once we saw the reactions and knew we were sitting on a goldmine, we went back to the drawing board: What could become our long-term moat?The answer was clear: building our own foundational speech models, especially for non-English languages.Voice quality is everything in dubbing. A dubbed video is only as good as the voiceover; if it’s not natural and engaging, nobody will consume it. That’s why we invested heavily in our own speech models, while also combining them with the best external models available to ensure creators get the smoothest experience.The evolution of the stack in just a few years has been mind-boggling. I still remember when Whisper came out. Within seven days, we had it integrated into Dubverse, instantly expanding language coverage and boosting transcription quality. Those moments have felt like riding the wave of AI innovation from the front row.The hardest challenge, from a technical perspective, has been data. We work in obscure languages, where high-quality datasets are scarce. But thanks to the wide variety of users on our platform, we’ve been able to accumulate a corpus of more than 250,000 hours of data, which now powers our model training. That’s the kind of advantage that compounds over time.Targeting prosumersOne of the best decisions we ma",
+      "upvotes": 19,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Our success is attributed to a strong first-mover advantage and a defensible AI technology moat. Due to our early entry into the market, we were able to capture demand quickly, while our advanced artificial intelligence solutions have created a barrier for our competitors. We have achieved rapid growth, strengthened o",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Our success is attributed to a strong first-mover advantage and a defensible AI technology moat. Due to our early entry into the market, we were able to capture demand quickly, while our advanced artificial intelligence solutions have created a barrier for our competitors. We have achieved rapid growth, strengthened our market position, and set the foundation f",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        Our success is attributed to a strong first-mover advantage and a defensible AI technology moat. Due to our early entry into the market, we were able to capture demand quickly, while our advanced artificial intelligence solutions have created a barrier for our competitors. We have achieved rapid growth, strengthened our market position, and set the foundation for continued scalability and long-term success through this combination of timing, innovation, and unique technology. ",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:08.806Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/g9SG7tZ85NrHvXyMvwXP",
+      "title": "Getting acqui-hired after seven years of \nbuilding\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "g9SG7tZ85NrHvXyMvwXP",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "Getting acqui-hired after seven years of \nbuilding\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                August 21, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanyLinguixFounderAlex LashkovRevenue>$14K a monthAlex Lashkov built an AI writing assistant called Linguix before ChatGPT was even a thing. He invested everything he had into it, and now — seven years later — it got acquired.Here's Alex on how he did it. 👇ContentsA tough exitScratching his own itchBurning through savingsWhat he'd do differentlyThe advantage of staying smallCompeting with unicornsAdvice for starting a B2B businessRecommended resourcesWhat's next?A tough exitI am a trained engineer, turned marketer, turned founder, turned CEO of an AI business. The product is called Linguix — it is an AI writing assistant for knowledge workers. My team and I worked on this product for almost seven years.Just recently, my cofounder and I were acqui-hired by a unicorn! Revenue at the time of the acquisition was around $170k ARR. I can't share the purchase price, but I think I can say that it was the same model that Google used with Windsurf: They bought out my technical cofounder and me, and the company remained a separate, active entity.Finding a way to exit the company was not easy at all! Eventually, cold outreach is what brought in our buyer.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    31\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    1\n    Bookmark\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n2\n\n\n\n\n\n\n\n\n\n        So many  years of smart pivots and going toe-to-toe with unicorns ...huge respect...\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Parag Nandy Roy\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          4 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Thanks 💪💪💪\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Alex Lashkov\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          4 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n\n\n    \n    \n      \n    \n  \n\n\n2\n\n\n\n\n\n\n\n\n\n        Really inspiring read, I’m currently building Coupyn solo since 2023, a platform for referral codes. Totally relate to the grind of doing everything yourself (frontend, backend, SEO, and even marketing).Hearing how you pushed through savings and competition reminds me that patience + consistency matter more than shortcuts. Thanks for sharing your lessons especially on staying small and iterating fast. It gives hope to those of us still in the trenches!\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Serhat Soruklu\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          6 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n    \n      \n    \n  \n\n\n2\n\n\n\n\n\n\n\n\n\n        Happy it was an inspiration",
+      "upvotes": 31,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n2\n\n\n\n\n\n\n\n\n\n        So many  years of smart pivots and going toe-to-toe with unicorns ...huge respect...\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Parag Nandy Roy\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          4 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n        ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n2\n\n\n\n\n\n\n\n\n\n        So many  years of smart pivots and going toe-to-toe with unicorns ...huge respect...\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Parag Nandy Roy\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          4 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "2\n\n\n\n\n\n\n\n\n\n        So many  years of smart pivots and going toe-to-toe with unicorns ...huge respect...\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Parag Nandy Roy\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          4 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Thanks 💪💪💪\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:13.382Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/MladIxzuGskkXpj7eUXC",
+      "title": "Paying the bills with a $13k/mo business while testing product \nideas\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "MladIxzuGskkXpj7eUXC",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "Paying the bills with a $13k/mo business while testing product \nideas\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                August 20, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompaniesLaunchFastPro, Casal Innovations Lda.FounderAndré CasalRevenue$13K a monthAndré Casal has spent the last 20 years building a $13k/mo business teaching private computer science classes and building web apps for clients — all while tinkering with his own side projects. None of those early ventures took off, but now he's going all-in on LaunchFastPro.Here's André on how he's doing it. 👇Contents20 years in the makingOptimizing the stackThe marketing struggle as an engineerAdvice: Motivation follows actionWhat's next?20 years in the makingI've always dreamed of being an entrepreneur, even as a kid. In fact, I've only ever worked for a traditional company for about three months—that's a story for another time.For roughly two decades, I've been teaching computer science and developing web applications for clients. That's what pays the bills.Teaching private classes for bachelor and masters students brings in roughly $3k/mo. And I make roughly $10k/mo building apps.Along the way, I've constantly scanned for problems worth solving. I've tested out plenty of ideas, but I struggled with execution and marketing. Until now. As the saying goes, \"An overnight success is years in the making.\"I launched and made six sales at 50€ each. It's not much, but validates the need. That's why I'm pouring everything into LaunchFastPro, including going from a solo proprietorship to an LLC type company.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    42\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    3\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Interesting and motivating. I learned from this. \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Sunday Zuoke \n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          20 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Hey Sunday, what a great name you have 🙌I'm super happy this was motivating! What are you working on at the moment Sunday?\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            André Casal\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          13 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        OK cool. It's on my profile. Cheers \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Sunday Zuoke \n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          12 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n\n\n    \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Loved this, André, using steady client work + teaching to fund product bets is a calm, sustainable pa",
+      "upvotes": 42,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Interesting and motivating. I learned from this. \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Sunday Zuoke \n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          20 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n   ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Interesting and motivating. I learned from this. \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Sunday Zuoke \n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          20 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n    \n      \n    ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        Interesting and motivating. I learned from this. \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Sunday Zuoke \n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          20 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Hey Sunday, what a great name you have 🙌I'm super happy this was motivating! What are you wo",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:20.009Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/oA0AqL4jY25lxrQ4uGBl",
+      "title": "From failure to $1M ARR in 8 \nmonths\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "oA0AqL4jY25lxrQ4uGBl",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "From failure to $1M ARR in 8 \nmonths\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                August 14, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanyRosieFounderJordan GalRevenue>$1MM a monthAfter his VC-funded company failed, Jordan Gal turned it into an entirely new product. Eight months later, Rosie hit $1M ARR.Here's Jordan on how he did it. 👇ContentsPivoting from failureFinding the ideaCutting back but overbuildingAI stackNothing to loseCold emails, ads, and SEOAn advertising failKeeping pricing lowFinding the right helpParting adviceWhat's next?Pivoting from failureI've been an entrepreneur my entire life. I currently run an AI voice company called Rosie, and we hit $1M ARR within eight months.The idea for Rosie came out of a pivot. I was running another product called Rally. We raised a seed round and a Series A, but unfortunately, that company just wasn't growing fast enough. We had gotten to a few hundred thousand in ARR and we were closing deals, but it just felt like everything was harder than it should have been.AI was popping, and I thought to myself, \"You know what? We've got a great team, we've got money in the bank, let's pivot and keep going.\" \n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    72\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    20\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Where are how were you sourcing your contact lists for your email campaigns? Or was the consultant providing that? \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              SnapserAlex\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          19 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Huge inspiration. How do you find Bland? I've also been experimenting with it and it's insane.\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Umberto A.\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Hitting $1M ARR in just eight months after a pivot is absolutely wild! 🚀 Super inspiring. To stay motivated to dive into a completely new product after Rally didn’t work out is really hard. Thanks for sharing such a raw journey!\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Alex Rowen\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Great read—thanks for sharing. We’re building EcoAppraise, an AI tool to cut through PR noise in the environmental space and help people distinguish real impact from greenwashing. It rates claims/stories/projects with a simple credibility score.Since you referenced advertising: whic",
+      "upvotes": 72,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Where are how were you sourcing your contact lists for your email campaigns? Or was the consultant providing that? \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              SnapserAlex\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          19 hours ago\n        \n\n\n          ·\n            \n            ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Where are how were you sourcing your contact lists for your email campaigns? Or was the consultant providing that? \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              SnapserAlex\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          19 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        Where are how were you sourcing your contact lists for your email campaigns? Or was the consultant providing that? \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              SnapserAlex\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          19 hours ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Huge inspiration. How",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:26.946Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/aP4YP2DouOUuicCtcnCB",
+      "title": "From weekend experiment to $20k/mo \nbusiness\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "aP4YP2DouOUuicCtcnCB",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "From weekend experiment to $20k/mo \nbusiness\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                August 13, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanyStagetimerFounderLukas HermannRevenue$20K a monthLukas Hermann built the simplest tool on his list of ideas. He just wanted to build a product in a single weekend, then he'd move on to the next idea.Three years later, Stagetimer is bringing in $20k/mo. He never made it to Idea #2.Here's Lukas on how he did it. 👇ContentsFinding an ideaFrom side hustle to main hustleUgly and basicGetting quality feedbackGrowth via Google and PLGNailing the business modelKeep it simpleWhat's next?Finding an ideaI recorded every idea I had for two years. Everything from \"Funny Posters for Toilet Doors\" to \"Website Generator for Restaurants.\"I thought there were 2-3 promising ideas. But I decided to start with the simplest idea.The simplest idea was one that came to me during a visit to a friend's video studio. I watched him jump up, run to another room to start a timer on an old laptop, then dash back to his video mixer. I thought, \"Surely there's a better solution\" — but when I searched online, I only found outdated desktop software that looked like Windows 98.As a web developer, this seemed like such an easy problem to solve. I had always wanted to build my own product anyway, so I put it on that idea list. And since it was simple enough to build in a weekend, that's what I eventually started withI never got to idea number two.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    70\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    27\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Through creativity, persistence, and smart strategies, James Fleischmann turned a weekend experiment into a $20k/month business.  \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              Kapricorn\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        I 've  always  wanted  to build something  your  story makes  this  seem  very attainable,  wishing  you  more  success and thanks  for  sharing. \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              futureMillionaire\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Amazing journey, Lukas! Turning a weekend experiment into a $20K/month business is so inspiring—proof that starting simple and sticking with it really pays off. Congrats!\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              AltumAngel\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    ",
+      "upvotes": 70,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Through creativity, persistence, and smart strategies, James Fleischmann turned a weekend experiment into a $20k/month business.  \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              Kapricorn\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n  ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Through creativity, persistence, and smart strategies, James Fleischmann turned a weekend experiment into a $20k/month business.  \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              Kapricorn\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        Through creativity, persistence, and smart strategies, James Fleischmann turned a weekend experiment into a $20k/month business.  \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              Kapricorn\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        I 've  alwa",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:32.432Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/j2n9ECQvdJBw9Gvf4TKA",
+      "title": "Hitting $12k/mo with a \nboilerplate\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "j2n9ECQvdJBw9Gvf4TKA",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "Hitting $12k/mo with a \nboilerplate\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                August 7, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanySupastarterFounderJonathan WilkeRevenue$12K a monthJonathan Wilke's micro-agency kept building the same boilerplate code over and over for customers. So he created something reusable to scratch his own itch.Then, on a whim, he made it available to the public. And three years later, this side hustle — Supastarter — is bringing in $12k/mo.Here's Jonathan on how he did it. 👇ContentsScratching his own itchConstant iterationThe Benefits of Building in Public on Twitter/XDon't underprice your productWhat's next?Scratching his own itchI started freelancing in web development when I was 16 years old. I went to school, worked at multiple companies, and worked my way up to become a web architect. But ultimately, I found that the slow processes of working in a large team weren't for me.On the side, I was still freelancing and working on smaller projects for customers — my friend and I had a small agency. We found ourselves spending too much time on boilerplate code when starting new customer projects, so I started building a reusable codebase with our common tools and best practices. This was the initial version of Supastarter.After a few weeks, I thought I might just try selling the boilerplate online. I built a simple website and added a Stripe link with a price of $49. After a week, I got my first sale. Now, almost three years later, this product is one of the most popular starter kits for Next.js and Nuxt. It's selling for $349, and has over 800 customers. It brings in an average of $12k/mo.This allowed me to quit my former full-time job. It also got me a job offer that I couldn't refuse — I currently work as a technical lead on a startup called SetSale that was built on Supastarter.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    87\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    13\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n5\n\n\n\n\n\n\n\n\n\n        For someone looking for a free and open source boilerplate, Next.js Boilerplate on GitHub: https://github.com/ixartz/Next-js-Boilerplate\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              ixartz\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          17 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        thats something great james !\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            mushaa\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          3 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n4\n\n\n\n\n\n\n\n\n\n        This guy is AMAZING and same is his product.\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              FlorinIndieHacker\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          19 days ago\n        \n\n\n          ·\n    ",
+      "upvotes": 87,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n5\n\n\n\n\n\n\n\n\n\n        For someone looking for a free and open source boilerplate, Next.js Boilerplate on GitHub: https://github.com/ixartz/Next-js-Boilerplate\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              ixartz\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          17 days ago\n        \n\n\n          ·\n          ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n5\n\n\n\n\n\n\n\n\n\n        For someone looking for a free and open source boilerplate, Next.js Boilerplate on GitHub: https://github.com/ixartz/Next-js-Boilerplate\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              ixartz\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          17 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n       ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "5\n\n\n\n\n\n\n\n\n\n        For someone looking for a free and open source boilerplate, Next.js Boilerplate on GitHub: https://github.com/ixartz/Next-js-Boilerplate\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              ixartz\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          17 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        thats ",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:37.657Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/ONMaxjB3rix2PnBCnrDr",
+      "title": "Hitting $100M ARR in eight months with an AI software \nbuilder\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "ONMaxjB3rix2PnBCnrDr",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "Hitting $100M ARR in eight months with an AI software \nbuilder\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                August 6, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanyLovableFounderAnton OsikaRevenue>$8.3MM a monthAnton Osika built an AI software builder in a weekend and got a huge response from the developer community. So he rebuilt, rebranded, and relaunched it as Lovable.Eight months later, it's bringing in $100M ARR.Here's Anton on how he did it. 👇Contents$100M ARR in eight monthsScaling problemsDrivers of explosive growthReduce plan complexityThe advantage of locationYour team is everythingWhat's next?$100M ARR in eight monthsMy background is in physics, which I studied at university and spent time at CERN before working as an engineer at some of Sweden's most exciting tech companies. I was a founding engineer at Sana and CTO of Depict before starting Lovable.I've always felt that the ability to create and build things is the highest form of having a positive impact on the world. And in the modern world, building software is the best way of doing that.However, the biggest barrier to building businesses is coding. 99% of people have great ideas and can execute on a business, but they don't know how to write code.I realized that AI could change that. AI allows us to unlock the potential of ideas for everyone. So I put together this command-line interface called GPT-Engineer in one weekend to prove it and the reaction from the developer community was immediate and overwhelming. Since then, GPT-Engineer has evolved into Lovable and the customer love has been immense.Lovable is an AI software builder that turns ideas into software in minutes. Anyone from non-technical users to experienced developers and enterprise teams can build with our platform — we think of it as the last piece of software anyone will ever need.We launched at the end of 2024 and within eight months, we’ve reached 2M users and $100M ARR.We're shipping new products and features all the time and we're just at the beginning of realizing what the world looks like when everyone can turn their idea into a business in minutes.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    63\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    10\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Define 2.3M active users. What I've seen with 95% of AI apps is that people create an account, log in and try it once to see the output in the hopes that it actually does what it claims (disclaimer, almost no AI app does what it claims). That's not an active user. Personally I think the key question with all these AI apps is not how many users, or how much content its generated, but how much value its generated. How many of the millions of projects created actually do something useful and generate revenue? That's a statistic I would love to see. AI can spit out garbage content and code at record speeds, but the amount of software developed that actually generates value is plummeting incredibly fast. \n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Beau Austin\n  ",
+      "upvotes": 63,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Define 2.3M active users. What I've seen with 95% of AI apps is that people create an account, log in and try it once to see the output in the hopes that it actually does what it claims (disclaimer, almost no AI app does what it claims). That's not an active user. Personally I think the key question with all these AI ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Define 2.3M active users. What I've seen with 95% of AI apps is that people create an account, log in and try it once to see the output in the hopes that it actually does what it claims (disclaimer, almost no AI app does what it claims). That's not an active user. Personally I think the key question with all these AI apps is not how many users, or how much cont",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        Define 2.3M active users. What I've seen with 95% of AI apps is that people create an account, log in and try it once to see the output in the hopes that it actually does what it claims (disclaimer, almost no AI app does what it claims). That's not an active user. Personally I think the key question with all these AI apps is not how many users, or how much content its generated, but how much value its generated. How many of the millions of projects created actually do somethin",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:42.446Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/6iF8SJRF4WpciDff9aYi",
+      "title": "Growing a scraping API to $10k+MRR in 12 \nmonths\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "6iF8SJRF4WpciDff9aYi",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "Growing a scraping API to $10k+MRR in 12 \nmonths\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                July 31, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanyScrape CreatorsFounderAdrian HorningRevenue>$10K a monthAdrian Horning fell in love with tech, learned to code, built an audience around scraping, and then built Scrape Creators.A year later, it's bringing in $10k+ MRR.Here's Adrian on how he did it. 👇ContentsFinding a love for techFinding the ideaBuilding a usage-based productFocus on one thingBuild an audienceAdvice to his younger selfWhat's next?Finding a love for techI was a psych major in college. One day, in one of my internships, I learned about Uber and decided I wanted to be in tech. So, I moved to San Francisco, attended a coding bootcamp, worked for Lyft, and delivered food on my bicycle to make ends meet.Eventually, I found a job in Utah as a software engineer. I worked for 3 years, saving until I had enough money to live on for about a year with no income. Then, I quit my job in 2022 and focused on entrepreneurship, while extending my runway through freelancing.These days, I'm working full time on Scrape Creators, a real-time social media scraping API. But that definitely wasn't the first product I built — I knew I wanted to build a business, but I had no idea what that would be.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    81\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    15\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        This article provides a compelling narrative of building a data scraping business. Drawing on my own experience with data scraping, I agree that focusing on specific challenges, such as handling complex website structures and ensuring data accuracy, is vital. However, I believe incorporating the ethical and legal aspects would further enrich the discussion, as these are critical considerations for sustainable data scraping practices.\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Snehal Joshi\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Really inspiring journey — scaling to $10k MRR in just a year is no small feat, especially in such a competitive space like APIs. It reminds me of how certain consumer apps, like Remini Video Enhancer Mod APK, also focus on solving a clear pain point and grow quickly by delivering real value. Great insights here on keeping things lean and customer-focused.\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              Affan322\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          2 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n3\n\n\n\n\n\n\n\n\n\n        That's an awesome achievement! Really impressive that you reached those numbers in just a year. I'd love to hear what helped you ",
+      "upvotes": 81,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        This article provides a compelling narrative of building a data scraping business. Drawing on my own experience with data scraping, I agree that focusing on specific challenges, such as handling complex website structures and ensuring data accuracy, is vital. However, I believe incorporating the ethical and legal aspe",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        This article provides a compelling narrative of building a data scraping business. Drawing on my own experience with data scraping, I agree that focusing on specific challenges, such as handling complex website structures and ensuring data accuracy, is vital. However, I believe incorporating the ethical and legal aspects would further enrich the discussion, as ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        This article provides a compelling narrative of building a data scraping business. Drawing on my own experience with data scraping, I agree that focusing on specific challenges, such as handling complex website structures and ensuring data accuracy, is vital. However, I believe incorporating the ethical and legal aspects would further enrich the discussion, as these are critical considerations for sustainable data scraping practices.\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:48.723Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/VRQprGga5zF3UFDqiCqw",
+      "title": "From desperation and dwindling runway to $10k \nMRR\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "VRQprGga5zF3UFDqiCqw",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "From desperation and dwindling runway to $10k \nMRR\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                July 29, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanySetter AIFounderJosef BüttgenRevenue$10K a monthJosef Büttgen's first product failed and his runway was running dry. Out of desperation, he tried the 12-startups-in-12-months challenge.Three months in, he found the right product — Setter AI. And a little over a year later, he hit $10k MRR.Here's Joseph on how he's doing it. 👇ContentsLearning about indie hacking12 startups in 12 monthsShipping and selling within two weeksBusiness is not like softwareOrganic growthHigh-touch clientsParting advice — don't thinkWhat's next?Learning about indie hackingI taught myself how to code at the age of 13. That's when I decided I wanted to build my own software. I studied Computer Science, then got some 9-to-5 experience and started freelancing right out of university.I did that until I had saved up enough runway to commit to entrepreneurship fully. By that point, I had already left my home country, Germany, to travel Southeast Asia for two years, where I learned about indie hacking through meeting inspiring people who were already living the dream.At the time, my girlfriend had a physical business, and she was having trouble scaling because of the operational workload. So, I built a tool to solve it, but didn't get much traction beyond her business. After a year, I went back to experimenting.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    76\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    14\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        From desperation to $10K MRR in just over a year—that’s not luck, that’s execution, grit, and smart hustle. Truly motivational—congratulations!\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              AltumAngel\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        🌸 學生妹、人妻、熟女、性感誘惑… 各種風格隨你挑，想要的這裡都有💋 TG：haner88 | Gleezy：haner88 💨 想放鬆就放鬆，不用出門找地方！ 外送茶直接到你身邊，快速又安心✨ TG：haner88 | Gleezy：haner88 🔒 隱密服務，保護你的隱私，每一次約都安心無憂💎 TG：haner88 | Gleezy：haner88\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              haner88\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          2 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n3\n\n\n\n\n\n\n\n\n\n        Really appreciate how honest this is , especially the “don’t think” bit. People get stuck overplanning instead of making noise and learning in public. Also love how you bounced back from the failed tool for your girlfriend by going full speed into experiments.\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              kaizenburg22\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a month ago\n        \n\n\n          ·\n            \n       ",
+      "upvotes": 76,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        From desperation to $10K MRR in just over a year—that’s not luck, that’s execution, grit, and smart hustle. Truly motivational—congratulations!\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              AltumAngel\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        From desperation to $10K MRR in just over a year—that’s not luck, that’s execution, grit, and smart hustle. Truly motivational—congratulations!\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              AltumAngel\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        From desperation to $10K MRR in just over a year—that’s not luck, that’s execution, grit, and smart hustle. Truly motivational—congratulations!\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              AltumAngel\n          \n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          a day ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n     ",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:54.510Z"
+    },
+    {
+      "url": "https://www.indiehackers.com/post/U2wOWstNmRCIrAEAlMqm",
+      "title": "Hitting a 7-figure ARR by adding value in niche \ncommunities\n  \n      IH+ Subscribers Only",
+      "strategy": "direct",
+      "postId": "U2wOWstNmRCIrAEAlMqm",
+      "author": "James Fleischmann",
+      "authorUrl": "https://www.indiehackers.com/authors/james-fleischmann",
+      "publishedAt": "",
+      "publishedAtText": "",
+      "content": "Hitting a 7-figure ARR by adding value in niche \ncommunities\n  \n      IH+ Subscribers Only\n    \n    \n    \n    \n    \n  \n\n\n\n            \n\n\n            \n              \n                By\n                    \n                      James Fleischmann              \n\n              \n                July 25, 2025\n              \n            \n          \n\n            \n              \n            \n\n      \n\n\n        \n          CompanyQueueFounderMas HossainRevenue>$83K a monthMas Hossain built an agency. Then, since he knew the pains, he started building products for agencies.Now, Queue has a 7-figure ARR. Here's Mas on how he did it. 👇ContentsScratch your own itchThe process of building a user-friendly productNot enough marketingParting adviceWhat's next?Scratch your own itchI've been coding since I was 10 years old. I started by building sites for Twitch streamers and startups, and just tinkering with projects for fun. As a first-generation immigrant in the US, it was a way to earn some income early on and really sharpen my skills as an engineer.From there, I started an agency. And now, I'm building Queue — a platform that helps agency owners run everything in one place. From billing clients on a subscription to managing projects to sending work out for review and feedback, it’s all there.We're at a 7-figure ARR and growing every monthWhat really motivated me to get started was thinking back to when I was running my own agency — just me, staying up late, trying to make clients happy and get paid. Every time someone launches a new agency on Queue, it brings me right back to that grind.That’s what drives me. I'm building for those ambitious founders chasing something of their own. I see myself in their journeys, and that keeps me inspired.\n        \n          \n        \n        \n          Create a Free Account\n          To read the rest of this article, you'll need to subscribe to Indie Hackers.\n          The best part is: subscribing is free!\n          Indie Hacker members get expanded access to more of our content, including articles and our database of ideas.\n          You'll also get access to the community, including the ability talk to other indie hackers and create a profile for yourself.\n        \n        \n\n\n    \n\n\n        \n\n\n            \n                \n                  About the\n                  Author\n                \n                \n                  \n                      \n                        \n                      \n                    \n                      \n                      James Fleischmann\n                    \n                      \n                          \n  \n\n                        @JamesOfTheDrum\n                      \n                  \n                    \n                      I've been writing for Indie Hackers for the better part of a decade. In that time, I've interviewed hundreds of startup founders about their wins, losses, and lessons. I'm also the cofounder of dbrief (AI interview assistant) and LoomFlows (customer feedback via Loom). And I write two newsletters: SaaS Watch (micro-SaaS acquisition opportunities) and Ancient Beat (archaeo/anthro news).\n\n                    \n                \n            \n\n\n\n\n        \n\n\n        \n          Support This Post\n          \n    \n  \n\n\n\n\n    56\n      \n        Upvotes\n      \n\n\n\n\n    \n  \n\n\n\n\n    9\n    Bookmarks\n\n\n\n\n    \n  \n\n    Share\n\n\n\n\n        \n\n\n        \n            Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Love this story, Mas! The journey from agency hustle to building a scalable SaaS through authentic community engagement is inspiring.What stands out most to me is how clear, helpful messaging becomes a silent growth engine even before any paid marketing starts. You didn’t just build a tool; you spoke directly to problems other agency founders care about.From a copywriting lens, you’re showing that value-first communication is far more sustainable than flashy launches.Curious, how did you phrase your early outreach or content to ensure it felt genuinely helpful yet compelling? Did you test different wordings in your community posts or messaging?Fauwaz | Copywriter helping indie makers sharpen landing page and outreach copy\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n            Fauwaz Muhammad\n          \n\n\n\n\n      \n\n    \n\n\n\n\n\n\n      ·\n        \n          6 days ago\n        \n\n\n          ·\n            \n              Reply\n            \n\n          ·\n          \n            Edit\n          \n\n\n    \n\n\n\n\n        \n\n\n    \n    \n      \n    \n  \n\n\n2\n\n\n\n\n\n\n\n\n\n        Love this story, Mas! The agency-to-SaaS transition makes so much sense - you had lived the exact pain points your customers face. That's such a powerful advantage over founders trying to solve problems they've never experienced.\n\n\n    \n      \n    \n          \n  \n    \n\n  \n\n\n\n          \n              indiehacker_grow33\n          \n\n\n\n      \n\n    \n\n",
+      "upvotes": 56,
+      "comments": [
+        {
+          "author": "Unknown",
+          "text": "About the\n                  Author",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Leave a Comment\n          \n    \n\n    \n      Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Love this story, Mas! The journey from agency hustle to building a scalable SaaS through authentic community engagement is inspiring.What stands out most to me is how clear, helpful messaging becomes a silent growth engine even before any paid marketing starts. You didn’t just build a tool; you spoke directly to probl",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment\n      \n\n\n\n  \n\n\n\n\n\n    \n    \n      \n    \n  \n\n\n1\n\n\n\n\n\n\n\n\n\n        Love this story, Mas! The journey from agency hustle to building a scalable SaaS through authentic community engagement is inspiring.What stands out most to me is how clear, helpful messaging becomes a silent growth engine even before any paid marketing starts. You didn’t just build a tool; you spoke directly to problems other agency founders care about.From a ",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…\n    \n\n\n\n  \n      \n        Post Comment",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "Say something nice to IndieJames…",
+          "upvotes": 0
+        },
+        {
+          "author": "Unknown",
+          "text": "1\n\n\n\n\n\n\n\n\n\n        Love this story, Mas! The journey from agency hustle to building a scalable SaaS through authentic community engagement is inspiring.What stands out most to me is how clear, helpful messaging becomes a silent growth engine even before any paid marketing starts. You didn’t just build a tool; you spoke directly to problems other agency founders care about.From a copywriting lens, you’re showing that value-first communication is far more sustainable than flashy launches.Curious, ",
+          "upvotes": 0
+        }
+      ],
+      "commentCount": 7,
+      "tags": [
+        "A.I.",
+        "A.I."
+      ],
+      "extractedAt": "2025-08-27T08:31:58.901Z"
+    }
+  ],
+  "extractedAt": "2025-08-27T08:31:59.406Z"
+}

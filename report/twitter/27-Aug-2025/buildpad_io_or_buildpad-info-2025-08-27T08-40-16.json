@@ -1,0 +1,9 @@
+{
+  "keyword": "buildpad.io OR buildpad",
+  "maxPosts": 20,
+  "sortBy": "latest",
+  "dateFolder": "/Users/khoadtran/Documents/Code/Personal/bespy-playwright/report/twitter/27-Aug-2025",
+  "createdAt": "2025-08-27T08:40:16.134Z",
+  "status": "prepared",
+  "note": "Use mcp__playwright__twitter_fetch_and_report to fetch actual data"
+}
